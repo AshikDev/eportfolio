@@ -1,0 +1,20 @@
+<?php
+return array (
+  '<strong>Confirm</strong> task deletion' => '',
+  '<strong>Create</strong> new task' => '',
+  '<strong>Edit</strong> task' => '',
+  'Add checkpoint...' => '',
+  'Add reminder' => 'Ajouter un rappel',
+  'Add responsible users' => '',
+  'Assign users' => '',
+  'Assignment' => '',
+  'Basic' => 'Général',
+  'Checklist' => '',
+  'Do you really want to delete this task?' => 'Voulez-vous vraiment supprimer cette tâche ?',
+  'Edit item (empty field will be removed)...' => '',
+  'Files' => 'Fichiers',
+  'Leave empty to let anyone work on this task.' => '',
+  'Scheduling' => 'Planification',
+  'Title and Color' => '',
+  'Title of your task' => 'Titre de la tâche',
+);

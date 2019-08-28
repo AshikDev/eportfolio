@@ -1,0 +1,35 @@
+### Google Scholar
+- No official API
+- http://www.icir.org/christian/scholar.html
+Can extract publication title, main online URL, number of citations, number of online versions, link to Google Scholar's main cluster for the work, and Google Scholar's cluster of all works referencing the publication.
+Can print entries in CSV format or plain text
+
+
+### Semantic Scholar
+https://www.semanticscholar.org
+API:
+https://api.semanticscholar.org
+
+
+### Academic Knowledge API
+https://docs.microsoft.com/de-de/azure/cognitive-services/academic-knowledge/home
+https://www.c-sharpcorner.com/article/getting-started-with-microsoft-academic-knowledge-using-cognitive-services/
+
+### SN SciGraph
+https://scigraph.springernature.com/explorer
+SN SciGraph is the Springer Nature linked data platform that collates information from across the research landscape, i.e. the things, documents, people, places and relations of importance to the science and scholarly domain.
+SN SciGraph includes data on all Springer Nature publications including journals and books from almost two hundred years (1830s to present), as well as funders, research projects, conferences, affiliations and institutions.
+### Datasets
+https://sn-scigraph.figshare.com/#
+
+### Elsevier
+https://dev.elsevier.com/about.html
+### Apis
+https://dev.elsevier.com
+### Scopus
+https://dev.elsevier.com/academic_research_scopus.html
+### Mendeley
+https://dev.mendeley.com
+- Python and JS SDKs
+
+

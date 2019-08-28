@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Change</strong> space image' => '<strong>Promijeni</strong> sliku prostora',
+  '<strong>Change</strong> type' => '<strong>Promijeni</strong> vrstu',
+  '<strong>Create</strong> new %typeTitle%' => '<strong>Kreiraj</strong> novi %typeTitle%',
+  '<strong>Create</strong> new space type' => '<strong>Kreiraj</strong> novu vrstu prostora',
+  '<strong>Delete</strong> space type' => '<strong>Obriši</strong> vrstu prostora',
+  '<strong>Edit</strong> space type' => '<strong>Uredi</strong> vrstu prostora',
+  'Create new type' => 'Kreiraj novu vrstu',
+  'Crop image' => 'Crop sliku',
+  'Current image' => 'Trenutna slika',
+  'Delete image' => 'Obriši sliku',
+  'Here you can manage your space types, which can be used to categorize your spaces.' => 'Ovdje možete upravljati vrstama prostora, koji se mogu koristiti za kategorizaciju vaših prostora.',
+  'Image' => 'Slika',
+  'Space Types' => 'Vrste prostora',
+  'To delete the space type <strong>"{type}"</strong> you need to set an alternative type for existing spaces:' => 'Da obrišete ovu vrstu prostora <strong>"{type}"</strong> morate odabrati alternativnu vrstu za postojeće prostore:',
+  'Type' => 'Vrsta',
+  'Types' => 'Vrste',
+  'Upload image' => 'Dodaj sliku',
+  'e.g. Project' => 'npr. Projekt',
+  'e.g. Projects' => 'npr. Projekti',
+);

@@ -1,0 +1,11 @@
+{
+  "id": "linkpreview",
+  "name": "LinkPreview",
+  "description": "The Link Preview Widget enable users to share links in posts and comments with rich previews attached. Users can select thumbnails, edit title and description.",
+  "keywords": ["links", "post"],
+  "version": "1.10",
+  "humhub": {
+    "minVersion": "1.3"
+  },
+  "screenshots": ["assets/screen1.jpg"]
+}

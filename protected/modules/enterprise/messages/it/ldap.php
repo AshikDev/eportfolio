@@ -1,0 +1,20 @@
+<?php
+return array (
+  '<strong>Create</strong> new ldap mapping' => '<strong>Crea</strong> un nuovo mapping ldap',
+  '<strong>Edit</strong> ldap mapping' => '<strong>Modifica</strong> il mapping ldap',
+  '<strong>LDAP</strong> member mapping' => '<strong>LDAP</strong> mapping dei membri',
+  'Assign LDAP users which becomes automatically member of this group.' => 'Assegna automaticamente gli utenti LDAP come membri di questo gruppo.',
+  'Assign LDAP users which becomes automatically member of this space.' => 'Assegna automaticamente gli utenti LDAP come membri di questo spazio.',
+  'Attribute value (e.g. street==Some Street <i>or</i> street=~Street)' => 'Valore attributo (es. street==Some Street <i>o</i> street=~Street)',
+  'Back to overview' => 'Torna alla panoramica',
+  'Create new mapping' => 'Crea un nuovo mapping',
+  'Group' => 'Gruppo',
+  'ID' => 'ID',
+  'LDAP' => 'LDAP',
+  'LDAP Mapping' => 'LDAP Mapping',
+  'Mapping options:' => 'Opzioni di mapping:',
+  'Note: This option is only available for global user administrators.' => 'Nota: questa opzione è disponibile solo per gli amministratori globali.',
+  'Part of the users base DN (e.g. OU=People,DC=example,DC=com)' => 'Parte della users base DN (es. OU=People,DC=example,DC=com)',
+  'Space ID' => 'ID Spazio',
+  'User Memberships (MemberOf, e.g. CN=xyz_space_access,OU=Groups,DC=example,DC=com)' => 'User Memberships (MemberOf, es. CN=xyz_space_access,OU=Groups,DC=example,DC=com)',
+);

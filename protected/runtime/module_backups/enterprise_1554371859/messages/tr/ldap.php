@@ -1,0 +1,20 @@
+<?php
+return array (
+  '<strong>Create</strong> new ldap mapping' => '<strong>Yeni</strong> ldap eşleme oluştur',
+  '<strong>Edit</strong> ldap mapping' => '<strong>Düzenleme</strong> ldap haritalama',
+  '<strong>LDAP</strong> member mapping' => '<strong>LDAP</strong> üye haritalama',
+  'Assign LDAP users which becomes automatically member of this group.' => '',
+  'Assign LDAP users which becomes automatically member of this space.' => '',
+  'Attribute value (e.g. street==Some Street <i>or</i> street=~Street)' => '',
+  'Back to overview' => 'Genel bakışa geri dön',
+  'Create new mapping' => 'Yeni bir eşleme oluştur',
+  'Group' => 'Grup',
+  'ID' => 'İD',
+  'LDAP' => 'LDAP',
+  'LDAP Mapping' => '',
+  'Mapping options:' => '',
+  'Note: This option is only available for global user administrators.' => '',
+  'Part of the users base DN (e.g. OU=People,DC=example,DC=com)' => '',
+  'Space ID' => 'Alan İD',
+  'User Memberships (MemberOf, e.g. CN=xyz_space_access,OU=Groups,DC=example,DC=com)' => '',
+);

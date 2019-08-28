@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Change</strong> space image' => '',
+  '<strong>Change</strong> type' => '<strong>Skift</strong> type',
+  '<strong>Create</strong> new %typeTitle%' => '<strong>Opret</strong> ny %typeTitle%',
+  '<strong>Create</strong> new space type' => '<strong>Opret</strong> ny side type',
+  '<strong>Delete</strong> space type' => '<strong>Slet</strong> side type',
+  '<strong>Edit</strong> space type' => '<strong>Rediger</strong> side type',
+  'Create new type' => 'Opret ny type',
+  'Crop image' => '',
+  'Current image' => '',
+  'Delete image' => '',
+  'Here you can manage your space types, which can be used to categorize your spaces.' => '',
+  'Image' => 'Billede',
+  'Space Types' => '',
+  'To delete the space type <strong>"{type}"</strong> you need to set an alternative type for existing spaces:' => 'For at slette side typen <strong>"{type}"</strong> så er du nødt til at angive en alternativ type for eksisterende side.',
+  'Type' => 'Type',
+  'Types' => 'Typer',
+  'Upload image' => '',
+  'e.g. Project' => '',
+  'e.g. Projects' => '',
+);

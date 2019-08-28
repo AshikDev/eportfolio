@@ -1,0 +1,20 @@
+<?php
+return array (
+  'Back to stream' => 'Vissza a folyamhoz',
+  'Created by me' => 'Általam létrehozva',
+  'Creation time' => 'Létrehozás dátuma',
+  'Filter' => 'Szűrés',
+  'Include archived content' => 'Vegye bele az archivált tartalmakat',
+  'Last update' => 'Utolsó frissítés dátuma',
+  'Load more' => 'Több betöltése',
+  'No matches with your selected filters!' => 'A kiválasztott szűrőkkel nincs találat!',
+  'Nothing here yet!' => 'Nincs még itt semmi!',
+  'Only private content' => 'Csak privát tartalom',
+  'Only public content' => 'Csak publikus tartalom',
+  'The content has been archived.' => 'Ez a tartalom achiválva.',
+  'The content has been deleted.' => 'A tartalmat törölték.',
+  'The content has been unarchived.' => 'Tartalom archiválása megszüntetve.',
+  'Where I´m involved' => 'Amikben érintett vagyok',
+  'With file attachments' => 'Fájl csatolmányokkal',
+  'Your last edit state has been saved!' => 'Az utolsó szerkesztési állapotod mentve!',
+);

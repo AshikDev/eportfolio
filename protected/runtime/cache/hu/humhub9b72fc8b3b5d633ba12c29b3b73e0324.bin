@@ -1,0 +1,23 @@
+a:2:{i:0;s:1487:"
+<a href="/index.php?r=activity%2Flink&id=448">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="718">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/uploads/profile_image/2b997e2e-e953-4231-a8c3-42bb35fcf471.jpg?m=1553106189">
+            
+            <!-- Show space image, if you are outside from a space -->
+                                                <div class="img-space pull-left space-profile-acronym-2 space-acronym hidden" style=" background-color: #348203; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">HD</div><img class="img-space pull-left space-profile-image-2 img-rounded profile-user-photo" src="/uploads/profile_image/747a394c-b4e7-486f-8ebf-5320510fe483.jpg?m=1553178618" alt="Humhub Development" style=" width: 20px; height: 20px">                
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Simon Gruseck</strong> likes Wiki page "Development-Platform"                <br>
+
+                <!-- show time -->
+                <span class="time"><span title="26 Jul 2019 - 17:21">26 Jul 2019</span></span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

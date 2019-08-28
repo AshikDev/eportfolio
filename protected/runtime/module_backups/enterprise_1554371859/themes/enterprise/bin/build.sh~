@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+lessc -x ../less/build.less ../css/theme.css

@@ -1,0 +1,13 @@
+{
+  "id": "popover-vcard",
+  "name": "VCard Popover",
+  "description": "Shows a VCard popover in streams for user and space links.",
+  "keywords": [
+    ""
+  ],
+  "version": "1.0.1",
+  "humhub": {
+    "minVersion": "1.3.0-beta.2"
+  },
+  "screenshots": ["resources/screen1.PNG", "resources/screen2.PNG"]
+}

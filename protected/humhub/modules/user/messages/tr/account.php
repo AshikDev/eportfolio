@@ -1,0 +1,21 @@
+<?php
+return array (
+  '<strong>Modify</strong> your profile image' => '<strong>Profil</strong> fotoğrafını değiştir',
+  '<strong>Modify</strong> your title image' => '<strong>Başlık</strong> fotoğrafını değiştir',
+  '<strong>Security</strong> settings' => '<strong>Güvenlik </strong> ayarları',
+  '<strong>User</strong> settings' => '<strong>Kullanıcı</strong> ayarları',
+  '<strong>Your</strong> profile' => '<strong>Senin</strong> profilin',
+  'All your personal data will be irrevocably deleted.' => 'Tüm kişisel verileriniz geri alınamaz bir şekilde silinecek.',
+  'Are you sure that you want to delete your account?' => 'Hesabınızı silmek istediğinize emin misiniz?',
+  'Delete account' => 'Hesabı sil',
+  'E-Mail Summaries' => 'E-posta Özetleri',
+  'Enter your password to continue' => '',
+  'Not registered users' => 'Kayıtlı olmayan kullanıcılar',
+  'Notifications' => 'Bildirimler',
+  'Other users' => 'Diğer kullanıcılar',
+  'Users' => 'Kullanıcılar',
+  'You are currently the owner of following spaces:' => 'Şu anda aşağıdaki mekanların sahibi sizsiniz:',
+  'You must transfer ownership or delete these spaces before you can delete your account.' => '',
+  'Your account cannot be deleted!' => 'Hesabınız silinemez!',
+  'Your friends' => 'Arkadaşların',
+);

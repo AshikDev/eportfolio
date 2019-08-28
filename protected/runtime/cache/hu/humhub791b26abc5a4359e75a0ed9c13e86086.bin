@@ -1,0 +1,22 @@
+a:2:{i:0;s:985:"
+<a href="/index.php?r=activity%2Flink&id=442">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="709">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/uploads/profile_image/1b60d952-21ab-490a-8f92-8aa4b15b7547.jpg?m=1561552643">
+            
+            <!-- Show space image, if you are outside from a space -->
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Md Mesbah Ul Awal</strong> wrote a new comment  "test"                <br>
+
+                <!-- show time -->
+                <span class="time"><span title="Jul 23, 2019 - 5:14 PM">Jul 23, 2019</span></span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

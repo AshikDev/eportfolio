@@ -1,0 +1,21 @@
+<?php
+return array (
+  '<strong>Modify</strong> your profile image' => 'Profilkép <strong>megváltoztatása</strong>',
+  '<strong>Modify</strong> your title image' => 'Borítókép <strong>megváltoztatása</strong>',
+  '<strong>Security</strong> settings' => '<strong>BIztonsági</strong> beállítások',
+  '<strong>User</strong> settings' => '<strong>Felhasználói</strong> beállítások',
+  '<strong>Your</strong> profile' => '<strong>Profilod</strong>',
+  'All your personal data will be irrevocably deleted.' => 'Az összes személyes adatod végérvényesen törölve lesz!',
+  'Are you sure that you want to delete your account?' => 'Biztos, hogy törölni szeretnéd a fiókod?',
+  'Delete account' => 'Fiók törlése',
+  'E-Mail Summaries' => 'Email összesítések',
+  'Enter your password to continue' => 'Írd be a jelszavad a folytatáshoz',
+  'Not registered users' => 'Nem regisztrált felhasználók',
+  'Notifications' => 'Értesítések',
+  'Other users' => 'További felhasználók',
+  'Users' => 'Felhasználók',
+  'You are currently the owner of following spaces:' => 'Jelenleg az alábbi közösségeknek vagy tulajdonosa:',
+  'You must transfer ownership or delete these spaces before you can delete your account.' => 'A fiók törléséhez át kell adnod a tulajdonjogot vagy törölnöd kell ezeket a közösségeket.',
+  'Your account cannot be deleted!' => 'A fiókodat nem lehet törölni!',
+  'Your friends' => 'Ismerőseid',
+);

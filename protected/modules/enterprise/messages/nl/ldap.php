@@ -1,0 +1,20 @@
+<?php
+return array (
+  '<strong>Create</strong> new ldap mapping' => '<Strong>Maak</ strong>een nieuwe ldap mapping',
+  '<strong>Edit</strong> ldap mapping' => '<strong>Bewerk</strong>een  ldap mapping',
+  '<strong>LDAP</strong> member mapping' => '<strong>LDAP</strong> member mapping',
+  'Assign LDAP users which becomes automatically member of this group.' => 'LDAP-gebruikers toewijzen die automatisch lid worden van deze groep.',
+  'Assign LDAP users which becomes automatically member of this space.' => 'LDAP-gebruikers toewijzen die automatisch lid worden van deze ruimte.',
+  'Attribute value (e.g. street==Some Street <i>or</i> street=~Street)' => 'Attribuutwaarde (bijvoorbeeld street == Hobbemastraat<i>of</ i>street = ~ Straat)',
+  'Back to overview' => 'Terug naar het overzicht',
+  'Create new mapping' => 'Maak nieuwe mapping aan',
+  'Group' => 'Groep',
+  'ID' => 'ID',
+  'LDAP' => 'LDAP',
+  'LDAP Mapping' => 'LDAP Mapping',
+  'Mapping options:' => 'Mapping opties:',
+  'Note: This option is only available for global user administrators.' => 'Opmerking: deze optie is alleen beschikbaar voor globale gebruikersbeheerders.',
+  'Part of the users base DN (e.g. OU=People,DC=example,DC=com)' => 'Een deel van de gebruikersbasis DN (bijvoorbeeld OU = People, DC = voorbeeld, DC = com)',
+  'Space ID' => 'Ruimte-ID',
+  'User Memberships (MemberOf, e.g. CN=xyz_space_access,OU=Groups,DC=example,DC=com)' => 'Gebruikers Lidmaatschappen (MemberOf, bijvoorbeeld CN = xyz_space_access, OU = Groups, DC = voorbeeld, DC = com)',
+);

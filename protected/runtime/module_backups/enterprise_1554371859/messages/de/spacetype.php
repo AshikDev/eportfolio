@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Change</strong> space image' => 'Space-Bild <strong>ändern</strong>',
+  '<strong>Change</strong> type' => 'Spacetyp <strong>ändern</strong>',
+  '<strong>Create</strong> new %typeTitle%' => 'Neuen %typeTitle% <strong>erstellen</strong>',
+  '<strong>Create</strong> new space type' => '<strong>Erstelle</strong> neuen Spacetyp',
+  '<strong>Delete</strong> space type' => 'Spacetyp <strong>löschen</strong>',
+  '<strong>Edit</strong> space type' => 'Spacetyp <strong>bearbeiten</strong>',
+  'Create new type' => 'Neuen Spacetyp erstellen',
+  'Crop image' => 'Bild zuschneiden',
+  'Current image' => 'Aktuelles Bild',
+  'Delete image' => 'Bild löschen',
+  'Here you can manage your space types, which can be used to categorize your spaces.' => 'Hier kannst Du deine Spacetypen verwalten, mit denen du deine Spaces kategorisieren kannst.',
+  'Image' => 'Bild',
+  'Space Types' => 'Spacetypen',
+  'To delete the space type <strong>"{type}"</strong> you need to set an alternative type for existing spaces:' => 'Um den Spacetyp <strong>"{type}"</strong> löschen zu können, muss für vorhandene Spaces ein anderer Spacetyp ausgewählt werden:',
+  'Type' => 'Spacetyp',
+  'Types' => 'Spacetypen',
+  'Upload image' => 'Bild hochladen',
+  'e.g. Project' => 'z.B. Projekt',
+  'e.g. Projects' => 'z.B. Projekte',
+);

@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Change</strong> space image' => '<strong>Vaihda</strong> sivun kuva',
+  '<strong>Change</strong> type' => '<strong>Muuta</strong> tyyppiä',
+  '<strong>Create</strong> new %typeTitle%' => '<strong>Luo</strong> uusi %typeTitle%',
+  '<strong>Create</strong> new space type' => '<strong>Luo</strong> sivutyyppi',
+  '<strong>Delete</strong> space type' => '<strong>Poista</strong> sivutyyppi',
+  '<strong>Edit</strong> space type' => '<strong>Muokkaa</strong> sivutyyppiä',
+  'Create new type' => 'Luo uusi tyyppi',
+  'Crop image' => 'Rajaa kuva',
+  'Current image' => 'Tämän hetkinen kuva',
+  'Delete image' => 'Poista kuva',
+  'Here you can manage your space types, which can be used to categorize your spaces.' => 'Täällä voit hallita sivutyyppejäsi, joita voidaan käyttää eri sivujen luokittelemiseen.',
+  'Image' => 'Kuva',
+  'Space Types' => 'Sivutyypit',
+  'To delete the space type <strong>"{type}"</strong> you need to set an alternative type for existing spaces:' => 'Jos haluat poistaa sivutyypin <strong>"{type}"</strong>, sinun on määritettävä vaihtoehtoinen tyyppi olemassa oleville sivuille:',
+  'Type' => 'Tyyppi',
+  'Types' => 'Tyypit',
+  'Upload image' => 'Lataa kuva',
+  'e.g. Project' => 'esim. Projekti',
+  'e.g. Projects' => 'esim. Projektit',
+);

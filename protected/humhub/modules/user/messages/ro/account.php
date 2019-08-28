@@ -1,0 +1,21 @@
+<?php
+return array (
+  '<strong>Modify</strong> your profile image' => 'Poza profil',
+  '<strong>Modify</strong> your title image' => 'Poza cover',
+  '<strong>Security</strong> settings' => 'Securitate',
+  '<strong>User</strong> settings' => 'Utilizator',
+  '<strong>Your</strong> profile' => 'Profil',
+  'All your personal data will be irrevocably deleted.' => 'Toate datele dvs. personale vor fi șterse irevocabil.',
+  'Are you sure that you want to delete your account?' => 'Sunteți sigur că doriți să ștergeți contul?',
+  'Delete account' => 'Sterge acount',
+  'E-Mail Summaries' => 'Rezumat email',
+  'Enter your password to continue' => 'Password',
+  'Not registered users' => 'Nu sunt utilizatori înregistrați',
+  'Notifications' => 'Notificari',
+  'Other users' => 'Alti utilizatori',
+  'Users' => 'Utilizatori',
+  'You are currently the owner of following spaces:' => 'În prezent, sunteți proprietarul următoarelor spații:',
+  'You must transfer ownership or delete these spaces before you can delete your account.' => 'Trebuie să transferați proprietatea sau să ștergeți aceste spații înainte de a vă putea șterge contul.',
+  'Your account cannot be deleted!' => 'Contul dvs. nu poate fi șters!',
+  'Your friends' => 'Prietenii tai',
+);

@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Change</strong> space image' => '<strong>Modifier</strong> l\'image de l\'espace',
+  '<strong>Change</strong> type' => '<strong>Modifier</strong> le type',
+  '<strong>Create</strong> new %typeTitle%' => '<strong>Créer</strong> un nouveau %typeTitle%',
+  '<strong>Create</strong> new space type' => '<strong>Créer</strong> un nouveau type d\'espace',
+  '<strong>Delete</strong> space type' => '<strong>Supprimer</strong> le type d\'espace',
+  '<strong>Edit</strong> space type' => '<strong>Modifier</strong> le type d\'espace',
+  'Create new type' => 'Créer un nouveau type',
+  'Crop image' => 'Couper l\'image',
+  'Current image' => 'Image actuelle',
+  'Delete image' => 'Supprimer l\'image',
+  'Here you can manage your space types, which can be used to categorize your spaces.' => 'Vous pouvez gérer ici vos types d\'espace, qui pourront être utilisés pour classer vos espaces en différentes catégories.',
+  'Image' => 'Image',
+  'Space Types' => 'Types d\'espace',
+  'To delete the space type <strong>"{type}"</strong> you need to set an alternative type for existing spaces:' => 'Pour supprimer le type d\'espace <strong>"{type}"</strong>, vous devez définir un type alternatif pour les espaces existants :',
+  'Type' => 'Type',
+  'Types' => 'Types',
+  'Upload image' => 'Charger une image',
+  'e.g. Project' => 'par ex. Projet',
+  'e.g. Projects' => 'par ex. Projets',
+);

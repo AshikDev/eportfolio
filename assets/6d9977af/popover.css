@@ -1,0 +1,60 @@
+/*
+ * @link https://www.humhub.org/
+ * @copyright Copyright (c) 2018 HumHub GmbH & Co. KG
+ * @license https://www.humhub.com/licences
+ */
+
+.vcardWrapper {
+}
+
+.vcardContent {
+    background-color: white;
+    width: 500px !important;
+}
+
+.vcardHeader {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.38) 100%);
+    background-size: 500px;
+    height: 84px !important;
+}
+
+.vcardHeader .displayName {
+    padding-top: 10px;
+    font-size: 24px;
+    color: white
+}
+
+.vcardHeader .title {
+    font-size: 16px;
+    color: white
+}
+
+.vcardHeader .imageWrapper {
+    margin: 8px;
+    margin-right: 16px;
+    background-color: white;
+    padding: 2px;
+}
+
+.vcardBody {
+    padding: 6px;
+    border-top: 1px solid #c5c5c5;
+}
+
+.vcardFooter {
+    border-top: 1px solid #c5c5c5;
+    background-color: #EDEDED;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.popover {
+    max-width: 700px;
+    padding: 0px !important;
+}
+
+.popover-content {
+    padding: 0px !important;
+}

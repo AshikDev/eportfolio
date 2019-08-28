@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Change</strong> space image' => 'Közösség képének <strong>módosítása</strong>',
+  '<strong>Change</strong> type' => 'Típus <strong>módósítása</strong>',
+  '<strong>Create</strong> new %typeTitle%' => 'Új %typeTitle% <strong>létrehozása</strong>',
+  '<strong>Create</strong> new space type' => 'Új közösségtípus <strong>létrehozása</strong>',
+  '<strong>Delete</strong> space type' => 'Közösségtípus <strong>törlése</strong>',
+  '<strong>Edit</strong> space type' => 'Közösségtípus <strong>szerkesztése</strong>',
+  'Create new type' => 'Új típus létrehozása',
+  'Crop image' => 'Kép körbevágása',
+  'Current image' => 'Aktuális kép',
+  'Delete image' => 'Kép törlése',
+  'Here you can manage your space types, which can be used to categorize your spaces.' => 'Itt kezelheted a közösségtípusokat, amelyek segítségével kategorizálhatod közösségeidet.',
+  'Image' => 'Kép',
+  'Space Types' => 'Közösségtípusok',
+  'To delete the space type <strong>"{type}"</strong> you need to set an alternative type for existing spaces:' => 'A <strong>"{type}"</strong> közösségtípus törléséhez be kell állítanod egy alternatív típust a meglévő közösségekhez:',
+  'Type' => 'Típus',
+  'Types' => 'Típusok',
+  'Upload image' => 'Kép feltöltése',
+  'e.g. Project' => 'pl. projekt',
+  'e.g. Projects' => 'pl. projektek',
+);
