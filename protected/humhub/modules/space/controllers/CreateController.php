@@ -57,6 +57,8 @@ class CreateController extends Controller
      */
     public function actionCreate($visibility = null, $skip = 0)
     {
+        $communityList = \yii\helpers\ArrayHelper::map(Space::find()->where(['community' => '_0_'])->all(), 'id', 'name');
+        
         // User cannot create spaces (public or private)
         if (!Yii::$app->user->permissionmanager->can(new CreatePublicSpace) && !Yii::$app->user->permissionmanager->can(new CreatePrivateSpace)) {
             throw new HttpException(400, 'You are not allowed to create spaces!');
@@ -64,10 +66,14 @@ class CreateController extends Controller
 
         $model = $this->createSpaceModel();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            if ($skip) {
-                return $this->htmlRedirect($model->getUrl());
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $model->community = '_'. implode( "_", $model->community ) . '_';
+            if($model->save()) {
+                if ($skip) {
+                    return $this->htmlRedirect($model->getUrl());
+                }
             }
+            
             return $this->actionModules($model->id);
         }
 
@@ -93,7 +99,53 @@ class CreateController extends Controller
             Space::JOIN_POLICY_FREE => Yii::t('SpaceModule.base', 'Everyone can enter')
         ];
 
-        return $this->renderAjax('create', ['model' => $model, 'visibilityOptions' => $visibilityOptions, 'joinPolicyOptions' => $joinPolicyOptions]);
+        return $this->renderAjax('create', ['model' => $model, 'communityList' => $communityList, 'visibilityOptions' => $visibilityOptions, 'joinPolicyOptions' => $joinPolicyOptions]);
+    }
+    
+    public function actionCreate_community($visibility = null, $skip = 0)
+    {
+        // User cannot create spaces (public or private)
+        if (!Yii::$app->user->permissionmanager->can(new CreatePublicSpace) && !Yii::$app->user->permissionmanager->can(new CreatePrivateSpace)) {
+            throw new HttpException(400, 'You are not allowed to create spaces!');
+        }
+
+        $model = $this->createSpaceModel();
+        $model->community = '_0_';
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $model->community = '_0_';
+            if($model->save()) {
+                if ($skip) {
+                    return $this->htmlRedirect($model->getUrl());
+                }
+            }
+            
+            return $this->actionModules($model->id);
+        }
+
+        $visibilityOptions = [];
+        if (Yii::$app->getModule('user')->settings->get('auth.allowGuestAccess') && Yii::$app->user->permissionmanager->can(new CreatePublicSpace)) {
+            $visibilityOptions[Space::VISIBILITY_ALL] = Yii::t('SpaceModule.base', 'Public (Members & Guests)');
+        }
+        if (Yii::$app->user->permissionmanager->can(new CreatePublicSpace)) {
+            $visibilityOptions[Space::VISIBILITY_REGISTERED_ONLY] = Yii::t('SpaceModule.base', 'Public (Members only)');
+        }
+        if (Yii::$app->user->permissionmanager->can(new CreatePrivateSpace)) {
+            $visibilityOptions[Space::VISIBILITY_NONE] = Yii::t('SpaceModule.base', 'Private (Invisible)');
+        }
+
+        // allow setting pre-selected visibility
+        if ($visibility !== null && isset($visibilityOptions[$visibility])) {
+            $model->visibility = $visibility;
+        }
+
+        $joinPolicyOptions = [
+            Space::JOIN_POLICY_NONE => Yii::t('SpaceModule.base', 'Only by invite'),
+            Space::JOIN_POLICY_APPLICATION => Yii::t('SpaceModule.base', 'Invite and request'),
+            Space::JOIN_POLICY_FREE => Yii::t('SpaceModule.base', 'Everyone can enter')
+        ];
+
+        return $this->renderAjax('create_community', ['model' => $model, 'visibilityOptions' => $visibilityOptions, 'joinPolicyOptions' => $joinPolicyOptions]);
     }
 
     /**

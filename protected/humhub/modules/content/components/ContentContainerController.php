@@ -47,8 +47,8 @@ class ContentContainerController extends Controller
      *
      * @var boolean require cguid container parameter
      */
-   // public $requireContainer = true;
- public $requireContainer = false;
+    public $requireContainer = true;
+
     /**
      * @var ContentContainerActiveRecord the content container (e.g. Space or User record)
      */

@@ -24,6 +24,7 @@ class Header extends Widget
      * @var \humhub\modules\space\models\Space the Space which this header belongs to
      */
     public $space;
+    public $community;
 
     /**
      * @inheritdoc
@@ -32,6 +33,7 @@ class Header extends Widget
     {
         return $this->render('header', [
             'space' => $this->space,
+            'community' => $this->community,
             // Deprecated variables below (will removed in future versions)
             'followingEnabled' => !Yii::$app->getModule('space')->disableFollow,
             'postCount' => -1

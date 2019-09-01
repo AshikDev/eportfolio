@@ -62,6 +62,7 @@ class Chooser extends Widget
     protected function getMemberships()
     {
         if (!Yii::$app->user->isGuest) {
+            // return Membership::findByUser(Yii::$app->user->getIdentity())->andWhere(['!=', 'space.community_id', 0])->all();
             return Membership::findByUser(Yii::$app->user->getIdentity())->all();
         }
     }

@@ -69,8 +69,10 @@ $form = ActiveForm::begin([
             ]);
             ?>
 
+
+
+
             <?php if ($canManageMembers) : ?>
-                <br />
                 <?= $form
                     ->field($model, 'withoutInvite')
                     ->label(Yii::t('SpaceModule.views_space_invite',

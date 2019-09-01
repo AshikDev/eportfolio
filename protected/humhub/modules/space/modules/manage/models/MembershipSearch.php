@@ -122,9 +122,7 @@ class MembershipSearch extends Membership
                 ['like', 'user.username', $this->freeText],
                 ['like', 'user.email', $this->freeText],
                 ['like', 'profile.firstname', $this->freeText],
-                ['like', 'profile.lastname', $this->freeText],
-                ['like', 'concat(profile.firstname, " ", profile.lastname)', $this->freeText],
-                ['like', 'concat(profile.lastname, " ", profile.firstname)', $this->freeText],
+                ['like', 'profile.lastname', $this->freeText]
             ]);
         }
         if (!empty($this->group_id)) {

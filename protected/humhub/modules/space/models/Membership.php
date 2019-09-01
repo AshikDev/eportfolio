@@ -304,6 +304,39 @@ class Membership extends ActiveRecord
 
         return $query;
     }
+    
+    public static function findByUserCommunity(
+        User $user = null,
+        $community_id,
+        $membershipStatus = self::STATUS_MEMBER,
+        $spaceStatus = Space::STATUS_ENABLED
+    ) {
+        if (!$user) {
+            $user = Yii::$app->user->getIdentity();
+        }
+
+        $query = Membership::find();
+
+        if (Yii::$app->getModule('space')->settings->get('spaceOrder') == 0) {
+            $query->orderBy('space.name ASC');
+        } else {
+            $query->orderBy('space_membership.last_visit DESC');
+        }
+
+        $query->joinWith('space')->where(['space_membership.user_id' => $user->id]);
+
+        if ($spaceStatus) {
+            $query->andWhere(['space.status' => $spaceStatus]);
+        }
+        
+        $query->andWhere(['like', 'space.community', '_' . $community_id . '_']);
+
+        if ($membershipStatus) {
+            $query->andWhere(['space_membership.status' => $membershipStatus]);
+        }
+
+        return $query;
+    }
 
     /**
      * Returns a user query for space memberships
@@ -329,7 +362,14 @@ class Membership extends ActiveRecord
             $query->andWhere(['space_membership.send_notifications' => 0]);
         }
 
+//        $community = Space::find()
+//            ->select(['id'])
+//            ->where(['like', 'community', '_' . $space->id . '_'])
+//            ->all();
         $query->andWhere(['space_id' => $space->id])->defaultOrder();
+//        foreach ($community as $c) {
+//            $query->orWhere(['space_id' => $c->id])->defaultOrder();
+//        }
 
         return $query;
     }

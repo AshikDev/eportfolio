@@ -1,0 +1,22 @@
+a:2:{i:0;s:1125:"
+<a href="/humhub_versions/eportfolio/index.php?r=activity%2Flink&id=383">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="630">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/humhub_versions/eportfolio/uploads/profile_image/e5814390-cfe2-40c3-b5be-653f5aaf08c9.jpg?m=1551944333">
+            
+            <!-- Show space image, if you are outside from a space -->
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Nico Vitt</strong> wrote a new comment  "Istiaq khan I bet you have to change the redirect url of the orcid login because there is an error."                <br>
+
+                <!-- show time -->
+                <span class="time"><span title="Jul 4, 2019 - 11:05 AM">Jul 4, 2019</span></span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

@@ -1,11 +1,11 @@
-a:2:{i:0;s:1080:"
-<a href="/index.php?r=activity%2Flink&id=415">
+a:2:{i:0;s:1134:"
+<a href="/humhub_versions/eportfolio/index.php?r=activity%2Flink&id=415">
     <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="676">
         <div class="media">
                             <!-- Show user image -->
                 <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
                      style="width: 32px; height: 32px;"
-                     src="/uploads/profile_image/17e819ef-ee86-4fed-bf1a-fd3ff823f33b.jpg?m=1561479639">
+                     src="/humhub_versions/eportfolio/uploads/profile_image/17e819ef-ee86-4fed-bf1a-fd3ff823f33b.jpg?m=1561479639">
             
             <!-- Show space image, if you are outside from a space -->
             

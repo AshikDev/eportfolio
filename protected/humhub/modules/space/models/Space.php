@@ -114,6 +114,7 @@ class Space extends ContentContainerActiveRecord implements Searchable
         $rules = [
             [['join_policy', 'visibility', 'status', 'auto_add_new_members', 'default_content_visibility'], 'integer'],
             [['name'], 'required'],
+            [['community'], 'required'],
             [['description', 'tags', 'color'], 'string'],
             [['join_policy'], 'in', 'range' => [0, 1, 2]],
             [['visibility'], 'in', 'range' => [0, 1, 2]],
@@ -138,8 +139,8 @@ class Space extends ContentContainerActiveRecord implements Searchable
     {
         $scenarios = parent::scenarios();
 
-        $scenarios[static::SCENARIO_EDIT] = ['name', 'color', 'description', 'tags', 'join_policy', 'visibility', 'default_content_visibility', 'url'];
-        $scenarios[static::SCENARIO_CREATE] = ['name', 'color', 'description', 'join_policy', 'visibility'];
+        $scenarios[static::SCENARIO_EDIT] = ['name', 'community', 'color', 'description', 'tags', 'join_policy', 'visibility', 'default_content_visibility', 'url'];
+        $scenarios[static::SCENARIO_CREATE] = ['name', 'community', 'color', 'description', 'join_policy', 'visibility'];
 
         return $scenarios;
     }
@@ -152,6 +153,7 @@ class Space extends ContentContainerActiveRecord implements Searchable
         return [
             'id' => 'ID',
             'name' => Yii::t('SpaceModule.models_Space', 'Name'),
+            'community' => Yii::t('SpaceModule.models_Space', 'Community'),
             'color' => Yii::t('SpaceModule.models_Space', 'Color'),
             'description' => Yii::t('SpaceModule.models_Space', 'Description'),
             'join_policy' => Yii::t('SpaceModule.models_Space', 'Join Policy'),

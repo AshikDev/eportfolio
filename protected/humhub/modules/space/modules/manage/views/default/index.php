@@ -6,6 +6,7 @@ use humhub\widgets\DataSaved;
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
 use humhub\widgets\Button;
+
 ?>
 
 <div class="panel panel-default">
@@ -22,6 +23,11 @@ use humhub\widgets\Button;
         <?php $form = ActiveForm::begin(['options' => ['id' => 'spaceIndexForm'], 'enableClientValidation' => false]); ?>
         
         <?= SpaceNameColorInput::widget(['form' => $form, 'model' => $model])?>
+        
+        <?= $form->field($model, 'community')->dropDownList(
+            $communityList, ['prompt' => 'Select Community', 'multiple' => 'multiple']
+        );
+        ?>
 
         <?= $form->field($model, 'description')->textarea(['rows' => 6]); ?>
 

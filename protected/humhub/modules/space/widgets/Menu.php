@@ -41,18 +41,38 @@ class Menu extends BaseMenu
 
         $this->addItemGroup([
             'id' => 'modules',
-            'label' => Yii::t('SpaceModule.widgets_SpaceMenuWidget', '<strong>Space</strong> menu'),
+            'label' => Yii::t('SpaceModule.widgets_SpaceMenuWidget', '<strong>Menu</strong>'),
             'sortOrder' => 100,
         ]);
 
-        $this->addItem([
-            'label' => Yii::t('SpaceModule.widgets_SpaceMenuWidget', 'Stream'),
-            'group' => 'modules',
-            'url' => $this->space->createUrl('/space/space/home'),
-            'icon' => '<i class="fa fa-bars"></i>',
-            'sortOrder' => 100,
-            'isActive' => (Yii::$app->controller->id == 'space' && (Yii::$app->controller->action->id == 'index' || Yii::$app->controller->action->id == 'home') && Yii::$app->controller->module->id == 'space'),
-        ]);
+        if ( $this->space->community != '_0_') {
+            $this->addItem([
+                'label' => Yii::t('SpaceModule.widgets_SpaceMenuWidget', 'Stream'),
+                'group' => 'modules',
+                'url' => $this->space->createUrl('/space/space/home'),
+                'icon' => '<i class="fa fa-bars"></i>',
+                'sortOrder' => 100,
+                'isActive' => (Yii::$app->controller->id == 'space' && (Yii::$app->controller->action->id == 'index' || Yii::$app->controller->action->id == 'home') && Yii::$app->controller->module->id == 'space'),
+            ]);
+        } else {
+            $this->addItem([
+                'label' => Yii::t('SpaceModule.widgets_SpaceMenuWidget', 'Stream'),
+                'group' => 'modules',
+                'url' => $this->space->createUrl('/space/space/community'),
+                'icon' => '<i class="fa fa-bars"></i>',
+                'sortOrder' => 100,
+                'isActive' => (Yii::$app->controller->id == 'space' && (Yii::$app->controller->action->id == 'index' || Yii::$app->controller->action->id == 'community') && Yii::$app->controller->module->id == 'space'),
+            ]);
+        }
+
+//        $this->addItem([
+//            'label' => Yii::t('SpaceModule.widgets_SpaceMenuWidget', 'Stream'),
+//            'group' => 'modules',
+//            'url' => $this->space->createUrl('/space/space/home'),
+//            'icon' => '<i class="fa fa-bars"></i>',
+//            'sortOrder' => 100,
+//            'isActive' => (Yii::$app->controller->id == 'space' && (Yii::$app->controller->action->id == 'index' || Yii::$app->controller->action->id == 'home') && Yii::$app->controller->module->id == 'space'),
+//        ]);
 
         parent::init();
     }

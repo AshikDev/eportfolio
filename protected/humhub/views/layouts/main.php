@@ -40,7 +40,7 @@
             <div class="container">
                 <ul class="nav" id="top-menu-nav">
                     <!-- load space chooser widget -->
-                    <?= \humhub\modules\space\widgets\Chooser::widget(); ?>
+                    <?= \humhub\modules\space\widgets\ChooserTop::widget(); ?>
 
                     <!-- load navigation from widget -->
                     <?= \humhub\widgets\TopMenu::widget(); ?>

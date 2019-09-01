@@ -49,12 +49,41 @@ class DefaultController extends Controller
         $space = $this->contentContainer;
         $space->scenario = 'edit';
 
-        if ($space->load(Yii::$app->request->post()) && $space->validate() && $space->save()) {
-            $this->view->saved();
-            return $this->redirect($space->createUrl('index'));
+        if ($space->load(Yii::$app->request->post()) && $space->validate()) {
+            $space->community = '_'. implode("_", $space->community) . '_';
+            if($space->save()) {
+                $this->view->saved();
+                return $this->redirect($space->createUrl('index'));
+            }
         }
+        
+        $communityList = \yii\helpers\ArrayHelper::map(Space::find()->where(['community' => '_0_'])->all(), 'id', 'name');
 
-        return $this->render('index', ['model' => $space]);
+        $spaceModel = Space::find()->select('community')->where(['id' => $this->contentContainer->id])->one();
+        $space->community = explode('_', trim($spaceModel->community, '_'));
+        
+        if($spaceModel->community != '_0_') {
+            return $this->render('index', ['model' => $space, 'communityList' => $communityList]);
+        } else {
+            return $this->redirect($space->createUrl('index_community'));
+        }
+        
+    }
+    
+    public function actionIndex_community()
+    {
+        $space = $this->contentContainer;
+        $space->scenario = 'edit';
+        $space->community = '_0_';
+
+        if ($space->load(Yii::$app->request->post()) && $space->validate()) {
+            if($space->save()) {
+                $this->view->saved();
+                return $this->redirect($space->createUrl('index_community'));
+            }
+        }
+                
+        return $this->render('index_community', ['model' => $space]);
     }
 
     public function actionAdvanced()

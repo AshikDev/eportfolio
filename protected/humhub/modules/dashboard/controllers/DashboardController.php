@@ -10,6 +10,9 @@ namespace humhub\modules\dashboard\controllers;
 
 use humhub\components\Controller;
 use humhub\modules\dashboard\components\actions\DashboardStreamAction;
+use humhub\modules\dashboard\components\actions\DashboardCommunityStreamAction;
+use humhub\modules\dashboard\components\actions\DashboardProfileStreamAction;
+use humhub\modules\stream\actions\ContentContainerStream;
 use Yii;
 
 class DashboardController extends Controller
@@ -46,6 +49,14 @@ class DashboardController extends Controller
                 'class' => DashboardStreamAction::class,
                 'activity' => false
             ],
+            'cstream' => [
+                'class' => DashboardCommunityStreamAction::class,
+                'activity' => false
+            ],
+            'pstream' => [
+                'class' => DashboardProfileStreamAction::class,
+                'activity' => false
+            ],
             'activity-stream' => [
                 'class' => DashboardStreamAction::class,
                 'activity' => true
@@ -66,7 +77,8 @@ class DashboardController extends Controller
         } else {
             return $this->render('index', [
                 'showProfilePostForm' => Yii::$app->getModule('dashboard')->settings->get('showProfilePostForm'),
-                'contentContainer' => Yii::$app->user->getIdentity()
+                'contentContainer' => Yii::$app->user->getIdentity(),
+                'commuityAll' => \humhub\modules\space\models\Space::find()->where(['community' => '_0_'])->all()
             ]);
         }
     }

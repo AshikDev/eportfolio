@@ -19,7 +19,7 @@ $space = $context->contentContainer;
 <div class="container space-layout-container">
     <div class="row">
         <div class="col-md-12">
-            <?= Header::widget(['space' => $space]); ?>
+            <?= Header::widget(['space' => $space, 'community' => @Yii::$app->view->params['community']]); ?>
         </div>
     </div>
     <div class="row space-content">

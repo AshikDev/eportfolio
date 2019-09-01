@@ -61,7 +61,24 @@ if ($space->isAdmin()) {
             <?php } ?>
 
             <!-- show user name and title -->
-            <div class="img-profile-data">
+            <div class="img-profile-data" <?php if(!empty($community)) echo 'style="height: 124px;"';?>>
+                <?php if(!empty($community)) {
+                    ?>
+                <h1 class="space" style="font-weight: 100; font-size: 20px;">
+                    <?php
+                    $flag = FALSE;
+                    foreach($community as $com) {
+                        if($flag) {
+                            echo ', ';
+                        }
+                        echo Html::encode($com->name);
+                        $flag = TRUE;
+                    }
+                    ?>
+                </h1>
+                <?php    
+                }
+                ?>
                 <h1 class="space"><?= Html::encode($space->name); ?></h1>
                 <h2 class="space"><?= Html::encode($space->description); ?></h2>
             </div>

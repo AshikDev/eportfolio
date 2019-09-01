@@ -11,7 +11,7 @@ use humhub\modules\space\widgets\Members;
 use humhub\modules\space\widgets\Sidebar;
 use humhub\modules\stream\widgets\StreamViewer;
 
-
+Yii::$app->view->params['community'] = $community;
 echo Form::widget(['contentContainer' => $space]);
 
 $emptyMessage = '';
