@@ -91,7 +91,7 @@ class DashboardCommunityStreamAction extends ActivityStreamAction
             ->from('space_membership')
             ->leftJoin('space sm', 'sm.id=space_membership.space_id')
             ->leftJoin('contentcontainer', 'contentcontainer.pk=sm.id AND contentcontainer.class = :spaceClass')
-            ->where('space_membership.user_id=' . $this->user->id . ' AND space_membership.show_at_dashboard = 1' . ' AND sm.community LIKE ' . "'%_" . $community_id . "_%'");
+            ->where('space_membership.user_id=' . $this->user->id . ' AND space_membership.show_at_dashboard = 1' . ' AND (sm.community LIKE ' . "'%_" . $community_id . "_%'" . ' OR sm.id=' . $community_id . ')');
         $union .= " UNION " . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0];
         
 //        $publicSpacesSql = (new Query())

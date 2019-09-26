@@ -362,14 +362,7 @@ class Membership extends ActiveRecord
             $query->andWhere(['space_membership.send_notifications' => 0]);
         }
 
-//        $community = Space::find()
-//            ->select(['id'])
-//            ->where(['like', 'community', '_' . $space->id . '_'])
-//            ->all();
         $query->andWhere(['space_id' => $space->id])->defaultOrder();
-//        foreach ($community as $c) {
-//            $query->orWhere(['space_id' => $c->id])->defaultOrder();
-//        }
 
         return $query;
     }

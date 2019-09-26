@@ -8,7 +8,7 @@ use humhub\modules\space\models\Space;
 
 <div class="panel panel-default members" id="space-members-panel">
     <?= PanelMenu::widget(['id' => 'space-members-panel']); ?>
-    <div class="panel-heading"><?= Yii::t('SpaceModule.widgets_views_spaceMembers', '<strong>Space</strong> members'); ?> (<?= $totalMemberCount ?>)</div>
+    <div class="panel-heading"><?= Yii::t('SpaceModule.widgets_views_spaceMembers', '<strong>Members'); ?> (<?= $totalMemberCount ?>)</div>
     <div class="panel-body">
         <?php foreach ($users as $user) : ?>
             <?php

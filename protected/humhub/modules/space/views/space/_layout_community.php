@@ -16,46 +16,6 @@ $context = $this->context;
 $space = $context->contentContainer;
 $memberships = $this->params['spaceList'];
 ?>
-<!--<div class="container space-layout-container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-md-12">-->
-<!--            --><?//= Header::widget(['space' => $space]); ?>
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="row space-content">-->
-<!--        <div class="col-md-2 layout-nav-container">-->
-<!--            <div class="panel panel-default left-navigation">-->
-<!--                <div class="panel-heading">-->
-<!---->
-<!--                    --><?php //foreach ($memberships as $membership) : ?>
-<!--                        --><?//=
-//                        SpaceChooserItemCustom::widget([
-//                            'space' => $membership->space,
-//                            'updateCount' => $membership->countNewItems(),
-//                            'isMember' => true
-//                        ]);
-//                        ?>
-<!---->
-<!--                    --><?php //endforeach; ?>
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--        </div>-->
-<!--        <div class="col-md---><?//= ($this->hasSidebar()) ? '7' : '10' ?><!-- layout-content-container">-->
-<!--            --><?//= SpaceContent::widget(['contentContainer' => $space, 'content' => $content]) ?>
-<!--        </div>-->
-<!--        --><?php //if ($this->hasSidebar()): ?>
-<!--            <div class="col-md-3 layout-sidebar-container">-->
-<!--                --><?//= $this->getSidebar() ?>
-<!--                --><?//= FooterMenu::widget(['location' => FooterMenu::LOCATION_SIDEBAR]); ?>
-<!--            </div>-->
-<!--        --><?php //endif; ?>
-<!--    </div>-->
-<!---->
-<!--    --><?php //if (!$this->hasSidebar()): ?>
-<!--        --><?//= FooterMenu::widget(['location' => FooterMenu::LOCATION_FULL_PAGE]); ?>
-<!--    --><?php //endif; ?>
-<!--</div>-->
 
 <div class="container space-layout-container">
     <div class="row">

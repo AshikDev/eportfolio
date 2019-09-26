@@ -31,13 +31,24 @@ class Header extends Widget
      */
     public function run()
     {
-        return $this->render('header', [
-            'space' => $this->space,
-            'community' => $this->community,
-            // Deprecated variables below (will removed in future versions)
-            'followingEnabled' => !Yii::$app->getModule('space')->disableFollow,
-            'postCount' => -1
-        ]);
+        if(empty($this->community)) {
+            return $this->render('headerCommunity', [
+                'space' => $this->space,
+                // Deprecated variables below (will removed in future versions)
+                'followingEnabled' => !Yii::$app->getModule('space')->disableFollow,
+                'postCount' => -1
+            ]);
+        } else {
+            return $this->render('header', [
+                'space' => $this->space,
+                'community' => $this->community,
+                // Deprecated variables below (will removed in future versions)
+                'followingEnabled' => !Yii::$app->getModule('space')->disableFollow,
+                'postCount' => -1
+            ]);
+        }
+
+
     }
 
 }

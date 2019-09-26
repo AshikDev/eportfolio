@@ -1,0 +1,19 @@
+{
+  "id": "FreiChat",
+  "version": "1.0.0",
+  "name": "FreiChat",
+  "description": "A module to load FreiChat chat software",
+  "humhub": {
+    "minVersion": "1.2"
+  },
+  "keywords": ["chat", "freichat", "free", "saas"],
+  "screenshots": ["assets/sc1.png", "assets/sc2.png"],
+  "homepage": "https://freichat.com",
+  "authors": [
+    {
+      "name": "Codologic",
+      "email": "admin@codologic.com",
+      "role": "Developer"
+    }
+  ]
+}

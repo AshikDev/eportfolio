@@ -11,6 +11,7 @@ use humhub\modules\space\widgets\Sidebar;
 use humhub\modules\stream\widgets\StreamViewer;
 
 Yii::$app->view->params['spaceList'] = $spaceList;
+echo Form::widget(['contentContainer' => $space]);
 
 $emptyMessage = '';
 if ($canCreatePosts) {

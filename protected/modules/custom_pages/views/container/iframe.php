@@ -1,10 +1,15 @@
 <?php
+
+use humhub\modules\activity\widgets\ActivityStreamViewer;
+use humhub\modules\space\modules\manage\widgets\PendingApprovals;
+use humhub\modules\space\widgets\Members;
+use humhub\modules\space\widgets\Sidebar;
 use yii\helpers\Html;
 
 $cssClass = ($page->hasAttribute('cssClass') && !empty($page->cssClass)) ? $page->cssClass : 'custom-pages-page';
 ?>
 
-<iframe class="<?= Html::encode($cssClass) ?>" id="iframepage" style="width:100%; height: 100%;" src="<?= Html::encode($url); ?>"></iframe>
+<iframe class="<?= Html::encode($cssClass) ?>" id="iframepage" style="width:100%; height: 100%; overflow: hidden;" src="<?= Html::encode($url); ?>"></iframe>
 
 <style>
     #iframepage {
@@ -17,7 +22,7 @@ $cssClass = ($page->hasAttribute('cssClass') && !empty($page->cssClass)) ? $page
 <script>
     function setSize() {
         $('#iframepage').css( {
-            height: (window.innerHeight - $('#iframepage').position().top - 15) + 'px',
+            height: ($('#iframepage').position().top) + 'px',
             background: 'inherit'
         });
     }
@@ -32,3 +37,19 @@ $cssClass = ($page->hasAttribute('cssClass') && !empty($page->cssClass)) ? $page
         });
     });
 </script>
+
+<?php
+
+// Custom
+$this->beginBlock('sidebar');
+
+echo Sidebar::widget(['space' => $contentContainer, 'widgets' => [
+    [ActivityStreamViewer::class, ['contentContainer' => $contentContainer], ['sortOrder' => 10]],
+    [PendingApprovals::class, ['space' => $contentContainer], ['sortOrder' => 20]],
+    [Members::class, ['space' => $contentContainer], ['sortOrder' => 30]],
+]]);
+
+$this->endBlock();
+// Custom
+
+?>

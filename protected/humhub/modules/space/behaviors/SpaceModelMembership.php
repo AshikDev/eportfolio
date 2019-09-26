@@ -402,6 +402,39 @@ class SpaceModelMembership extends Behavior
         $user = User::findOne(['id' => $userId]);
         $membership = $this->getMembership($userId);
 
+        // Added by Ashik
+        $spaceOne = Space::find()->select('community')->where(['id' => $this->owner->id])->one();
+        if(isset($spaceOne) && $spaceOne != null && !empty($spaceOne)) {
+            $communityList = explode('_', $spaceOne->community);
+            foreach ($communityList as $community) {
+                $parentSpace = Space::findOne(['id' => $community]);
+                if(isset($parentSpace) && ($parentSpace != null) && !empty($spaceOne)) {
+                    $communityMemberships = $parentSpace->getMembership($userId);
+
+                    if ($communityMemberships == null) {
+                        // Add Membership
+                        $communityMemberships = new Membership([
+                            'space_id' => $parentSpace->id,
+                            'user_id' => $userId,
+                            'status' => Membership::STATUS_MEMBER,
+                            'group_id' => Space::USERGROUP_MEMBER,
+                            'can_cancel_membership' => $canLeave
+                        ]);
+
+                        $userInvite = Invite::findOne(['email' => $user->email]);
+
+                        if ($userInvite !== null && $userInvite->source == Invite::SOURCE_INVITE && !$silent) {
+                            InviteAccepted::instance()->from($user)->about($this->owner)
+                                ->send(User::findOne(['id' => $userInvite->user_originator_id]));
+                        }
+
+                        $communityMemberships->save();
+                    }
+                }
+            }
+        }
+        // Added by Ashik
+
         if ($membership == null) {
             // Add Membership
             $membership = new Membership([
@@ -418,6 +451,7 @@ class SpaceModelMembership extends Behavior
                 InviteAccepted::instance()->from($user)->about($this->owner)
                     ->send(User::findOne(['id' => $userInvite->user_originator_id]));
             }
+
         } else {
             // User is already member
             if ($membership->status == Membership::STATUS_MEMBER) {
