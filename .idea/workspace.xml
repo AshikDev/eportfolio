@@ -3,34 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4dfb2066-717d-46c8-9626-a4e09615f934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/activity.zip" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/activity.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/content.zip" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/content.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/dashboard.zip" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/dashboard.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/dashboard/components/actions/DashboardCommunityStreamAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/dashboard/components/actions/DashboardCommunityStreamAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space.zip" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/behaviors/SpaceModelMembership.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/behaviors/SpaceModelMembership.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/models/Membership.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/models/Membership.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/views/space/_layout_community.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/views/space/_layout_community.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/views/space/community.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/views/space/community.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/Header.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/Header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/members.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/members.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/spaceChooserItemTop.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/spaceChooserItemTop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/stream.zip" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/stream.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/custom_pages/controllers/ContainerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/custom_pages/controllers/ContainerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/custom_pages/views/container/iframe.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/custom_pages/views/container/iframe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/custom_pages/views/container/markdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/custom_pages/views/container/markdown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/custom_pages/views/layouts/_directory_layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/custom_pages/views/layouts/_directory_layout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub02679e327d54cdb61a2e6e675d3fcdcc.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub02679e327d54cdb61a2e6e675d3fcdcc.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub056c5b400334b1a84c28a58cbeeeaa0f.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub056c5b400334b1a84c28a58cbeeeaa0f.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub3895898adc799272dece975bac806da3.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub3895898adc799272dece975bac806da3.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub3e0fd5cd1ae2c92a478e312cc451b1a6.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub3e0fd5cd1ae2c92a478e312cc451b1a6.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub3f7cfc6c83789740715f3472d15ee61e.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub3f7cfc6c83789740715f3472d15ee61e.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub471e6d2d1747ee978150cc8db4ce1df2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub471e6d2d1747ee978150cc8db4ce1df2.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub580e4ae15cf938fb1ffffc7d1590fcd6.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub580e4ae15cf938fb1ffffc7d1590fcd6.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub7b061d92954613d68a97b9019f6710f8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub7b061d92954613d68a97b9019f6710f8.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhuba50304578ffa6bf9c87725623f0a784d.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhuba50304578ffa6bf9c87725623f0a784d.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubbbde8e6da511cb978e83a0bb46c84c52.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubbbde8e6da511cb978e83a0bb46c84c52.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubc874001103234b2333d07e0e34c3d88d.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubc874001103234b2333d07e0e34c3d88d.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/controllers/DirectoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/controllers/DirectoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/views/directory/spaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/views/directory/spaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/NewSpaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/NewSpaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/spaceChooserTop.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/spaceChooserTop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/widgets/views/topNavigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/widgets/views/topNavigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub6c9add49a4939e0744750dab3904088e.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub6c9add49a4939e0744750dab3904088e.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/logs/app.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,6 +81,9 @@
       <workItem from="1568364874850" duration="7385000" />
       <workItem from="1568674321702" duration="5122000" />
       <workItem from="1568716725009" duration="2224000" />
+      <workItem from="1569491230002" duration="6809000" />
+      <workItem from="1569869241380" duration="9887000" />
+      <workItem from="1569928482663" duration="532000" />
     </task>
     <servers />
   </component>

@@ -151,9 +151,15 @@ class DirectoryController extends Controller
             $event->sender->addWidget(SpaceStatistics::class, [], ['sortOrder' => 20]);
         });
 
+        if($keyword != '') {
+            $spaces = $searchResultSet->getResultInstances();
+        } else {
+            $spaces = Space::find()->all();
+        }
+
         return $this->render('spaces', [
                     'keyword' => $keyword,
-                    'spaces' => $searchResultSet->getResultInstances(),
+                    'spaces' => $spaces,
                     'pagination' => $pagination,
         ]);
     }

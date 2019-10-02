@@ -32,7 +32,7 @@ class Menu extends \humhub\widgets\BaseMenu
 
         $this->addItemGroup([
             'id' => 'directory',
-            'label' => Yii::t('DirectoryModule.base', '<strong>Directory</strong> menu'),
+            'label' => Yii::t('DirectoryModule.base', '<strong>Hub</strong> menu'),
             'sortOrder' => 100,
         ]);
 
@@ -55,7 +55,7 @@ class Menu extends \humhub\widgets\BaseMenu
         ]);
 
         $this->addItem([
-            'label' => Yii::t('DirectoryModule.base', 'Spaces'),
+            'label' => Yii::t('DirectoryModule.base', 'Hub'),
             'group' => 'directory',
             'url' => Url::to(['/directory/directory/spaces']),
             'sortOrder' => 300,

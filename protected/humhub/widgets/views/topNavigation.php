@@ -8,6 +8,10 @@ use yii\helpers\Html;
     if (isset($item['id'])) {
         echo $item['id'];
     }
+
+    if (strcasecmp($item['label'], 'directory') == 0) {
+        $item['label'] = 'Hub Overview';
+    }
     ?>">
             <?php echo Html::a($item['icon'] . "<br />" . $item['label'], $item['url'], $item['htmlOptions']); ?>
     </li>

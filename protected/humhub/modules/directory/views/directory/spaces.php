@@ -17,7 +17,7 @@ use yii\helpers\Url;
 <div class="panel panel-default">
 
     <div class="panel-heading">
-        <?= Yii::t('DirectoryModule.base', '<strong>Space</strong> directory'); ?>
+        <?= Yii::t('DirectoryModule.base', '<strong>Hub</strong> directory'); ?>
     </div>
 
     <div class="panel-body">
@@ -41,6 +41,98 @@ use yii\helpers\Url;
 
     <hr>
     <ul class="media-list">
+        <?php if($keyword == ''): ?>
+        <?php foreach ($spaces as $space) : ?>
+        <?php  if ($space->community == '_0_'): ?>
+                <li>
+                    <div class="media">
+                        <div class="pull-right">
+                            <?=
+                            FollowButton::widget([
+                                'space' => $space,
+                                'followOptions' => ['class' => 'btn btn-primary btn-sm'],
+                                'unfollowOptions' => ['class' => 'btn btn-info btn-sm']
+                            ]);
+                            ?>
+                        </div>
+
+                        <?= Image::widget([
+                            'space' => $space, 'width' => 50,
+                            'htmlOptions' => [
+                                'class' => 'media-object',
+                                'data-contentcontainer-id' => $space->contentcontainer_id
+                            ],
+                            'linkOptions' => ['class' => 'pull-left'],
+                            'link' => true,
+                        ]); ?>
+
+                        <?php if ($space->isMember()): ?>
+                            <i class="fa fa-user space-member-sign tt" data-toggle="tooltip" data-placement="top" title=""
+                               data-original-title="<?= Yii::t('DirectoryModule.base', 'You are a member of this space'); ?>"></i>
+                        <?php endif; ?>
+
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <?= Html::containerLink($space); ?>
+                                <?php if ($space->isArchived()) : ?>
+                                    <span
+                                            class="label label-warning"><?= Yii::t('ContentModule.widgets_views_label', 'Archived'); ?></span>
+                                <?php endif; ?>
+                            </h4>
+
+                            <h5><?= Html::encode(Helpers::truncateText($space->description, 100)); ?></h5>
+                            <?= SpaceTagList::widget(['space' => $space]); ?>
+                        </div>
+                    </div>
+                </li>
+        <?php foreach ($spaces as $s): ?>
+                <?php if (strpos($s->community, '_' . $space->id . '_') !== false): ?>
+            <li>
+                <div class="media" style="padding-left: 40px;">
+                    <div class="pull-right">
+                        <?=
+                        FollowButton::widget([
+                            'space' => $s,
+                            'followOptions' => ['class' => 'btn btn-primary btn-sm'],
+                            'unfollowOptions' => ['class' => 'btn btn-info btn-sm']
+                        ]);
+                        ?>
+                    </div>
+
+                    <?= Image::widget([
+                        'space' => $s, 'width' => 50,
+                        'htmlOptions' => [
+                            'class' => 'media-object',
+                            'data-contentcontainer-id' => $s->contentcontainer_id
+                        ],
+                        'linkOptions' => ['class' => 'pull-left'],
+                        'link' => true,
+                    ]); ?>
+
+                    <?php if ($s->isMember()): ?>
+                        <i class="fa fa-user space-member-sign tt" data-toggle="tooltip" data-placement="top" title=""
+                           data-original-title="<?= Yii::t('DirectoryModule.base', 'You are a member of this space'); ?>"></i>
+                    <?php endif; ?>
+
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            <?= Html::containerLink($s); ?>
+                            <?php if ($s->isArchived()) : ?>
+                                <span
+                                    class="label label-warning"><?= Yii::t('ContentModule.widgets_views_label', 'Archived'); ?></span>
+                            <?php endif; ?>
+                        </h4>
+
+                        <h5><?= Html::encode(Helpers::truncateText($s->description, 100)); ?></h5>
+                        <?= SpaceTagList::widget(['space' => $s]); ?>
+                    </div>
+                </div>
+            </li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+        <?php endif; ?>
+        <?php endforeach; ?>
+        <?php else: ?>
         <?php foreach ($spaces as $space) : ?>
             <li>
                 <div class="media">
@@ -74,7 +166,7 @@ use yii\helpers\Url;
                             <?= Html::containerLink($space); ?>
                             <?php if ($space->isArchived()) : ?>
                                 <span
-                                    class="label label-warning"><?= Yii::t('ContentModule.widgets_views_label', 'Archived'); ?></span>
+                                        class="label label-warning"><?= Yii::t('ContentModule.widgets_views_label', 'Archived'); ?></span>
                             <?php endif; ?>
                         </h4>
 
@@ -83,7 +175,8 @@ use yii\helpers\Url;
                     </div>
                 </div>
             </li>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </ul>
 </div>
 

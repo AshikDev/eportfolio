@@ -10,7 +10,7 @@ use yii\helpers\Html;
 
 SpaceChooserAsset::register($this);
 
-$noSpaceView = '<div class="no-space"><i class="fa fa-dot-circle-o"></i><br>' . Yii::t('SpaceModule.widgets_views_spaceChooser', 'My spaces') . '<b class="caret"></b></div>';
+$noSpaceView = '<div class="no-space"><i class="fa fa-dot-circle-o"></i><br>' . Yii::t('SpaceModule.widgets_views_spaceChooser', 'My hub') . '<b class="caret"></b></div>';
 
 $this->registerJsConfig('space.chooser', [
     'noSpace' => $noSpaceView,
@@ -108,6 +108,14 @@ $this->registerJsConfig('space.chooser', [
         </li>
         <li class="remoteSearch">
             <ul id="space-menu-remote-search" class="media-list notLoaded"></ul>
+        </li>
+
+        <li>
+            <div class="dropdown-footer">
+                <a href="<?= Url::to(['/directory/directory/spaces']); ?>" class="btn btn-primary col-md-12" style="background-color: #00802b">
+                    <?= Yii::t('SpaceModule.widgets_views_spaceChooser', 'Join a Space') ?>
+                </a>
+            </div>
         </li>
 
         <?php if ($canCreateSpace) : ?>
