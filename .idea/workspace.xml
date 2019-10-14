@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4dfb2066-717d-46c8-9626-a4e09615f934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/controllers/DirectoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/controllers/DirectoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/views/directory/spaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/views/directory/spaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/NewSpaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/NewSpaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/spaceChooserTop.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/space/widgets/views/spaceChooserTop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/widgets/views/topNavigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/widgets/views/topNavigation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub6c9add49a4939e0744750dab3904088e.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub6c9add49a4939e0744750dab3904088e.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/logs/app.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +76,7 @@
       <workItem from="1569491230002" duration="6809000" />
       <workItem from="1569869241380" duration="9887000" />
       <workItem from="1569928482663" duration="532000" />
+      <workItem from="1571054422694" duration="553000" />
     </task>
     <servers />
   </component>
