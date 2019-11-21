@@ -1,4 +1,4 @@
-a:2:{i:0;s:975:"
+a:2:{i:0;s:974:"
 <a href="/humhub_versions/eportfolio/index.php?r=activity%2Flink&id=478">
     <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="767">
         <div class="media">
@@ -15,7 +15,7 @@ a:2:{i:0;s:975:"
                 <strong>roger norum</strong> joined this space.                <br>
 
                 <!-- show time -->
-                <span class="time" title="2019-09-07T01:45:23+02:00">Sep 7, 2019 - 1:45 AM</span>            </div>
+                <span class="time"><span title="Sep 7, 2019 - 1:45 AM">Sep 7, 2019</span></span>            </div>
         </div>
     </li>
 </a>

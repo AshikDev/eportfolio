@@ -1,4 +1,4 @@
-a:2:{i:0;s:1037:"
+a:2:{i:0;s:1511:"
 <a href="/humhub_versions/eportfolio/index.php?r=activity%2Flink&id=491">
     <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="782">
         <div class="media">
@@ -8,6 +8,7 @@ a:2:{i:0;s:1037:"
                      src="/humhub_versions/eportfolio/uploads/profile_image/1daa6b6d-143f-4663-b37f-1f304ea9f361.jpg?m=1555486272">
             
             <!-- Show space image, if you are outside from a space -->
+                                                <div class="img-space pull-left space-profile-acronym-11 space-acronym" style=" background-color: #35099b; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">CA</div><img class="img-space pull-left space-profile-image-11 img-rounded profile-user-photo hidden" src="/humhub_versions/eportfolio/static/img/default_space.jpg" alt="Cost action" style=" width: 20px; height: 20px">                
             
             <div class="media-body text-break">
 

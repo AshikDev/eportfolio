@@ -9,6 +9,10 @@ use yii\helpers\Html;
         echo $item['id'];
     }
 
+    if (strcasecmp($item['label'], 'calendar') == 0) {
+        $item['label'] = 'Hub Calendar';
+    }
+
     if (strcasecmp($item['label'], 'directory') == 0) {
         $item['label'] = 'Hub Overview';
     }

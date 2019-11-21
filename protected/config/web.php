@@ -6,5 +6,21 @@
  * @see http://docs.humhub.org/dev-environment.html
  */
 return [
+    'bootstrap' => ['debug'],
+    'modules' => [
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['127.0.0.1', '::1'],
+            'generators' => [
+                'module' => [
+                    'class' => 'humhub\modules\devtools\gii\generators\ModuleGenerator',
+                ]
+            ],
+        ],
+        'debug' => [
+            'class' => 'yii\debug\Module',
+            'allowedIPs' => ['127.0.0.1', '::1'],
+        ]
+    ]
 ];
 

@@ -3737,3 +3737,1835 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1569887591.883
     'REQUEST_TIME' => 1569887591
 ]
+2019-10-14 16:45:56 [::1][13][78bbf6526983fdd073d82df473dd2e4f][error][yii\db\Exception] PDOException: SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:316
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(316): PDOStatement->bindValue(0, 'visibility', 2)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(260): yii\db\Command->bindPendingParams()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/directory/controllers/DirectoryController.php(157): yii\db\ActiveQuery->all()
+#7 [internal function]: humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('spaces', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('directory/direc...', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+Failed to prepare SQL: SELECT * FROM `space` WHERE <> in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:264
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/directory/controllers/DirectoryController.php(157): yii\db\ActiveQuery->all()
+#5 [internal function]: humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('spaces', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('directory/direc...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => HY093
+    [1] => 0
+)
+
+2019-10-14 16:45:56 [::1][13][78bbf6526983fdd073d82df473dd2e4f][info][application] $_GET = [
+    'r' => 'directory/directory/spaces'
+    '_pjax' => '#layout-content'
+    '_' => '1571063440903'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XaSKJJYUhctR-KZIm0bOfAAAAAs'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_X_CSRF_TOKEN' => '5zxGLCVAz-B8tiJvCZQIo8ElbShxiKLK9X9WL2-chYWFRXJ7aSf70wybTTs99V3ZtkMdTz3R4aHESTFgWKvE7w=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=directory%2Fdirectory%2Fgroups'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_groups-statistics-panel=expanded; pm_spaces-statistics-panel=expanded; PHPSESSID=78bbf6526983fdd073d82df473dd2e4f; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; _csrf=7bf7f9f55d841be6050c1ad634ccff9ae598539cde919a5f5beb89801695378ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22by4WLg43p-oT4aUzwfpgLYCk16gO77Aj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=directory%2Fdirectory%2Fspaces&_pjax=%23layout-content&_=1571063440903'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=directory%2Fdirectory%2Fspaces&_pjax=%23layout-content&_=1571063440903'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571064356.462
+    'REQUEST_TIME' => 1571064356
+]
+2019-10-14 16:45:56 [::1][13][78bbf6526983fdd073d82df473dd2e4f][error][yii\db\Exception] PDOException: SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:316
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(316): PDOStatement->bindValue(0, 'visibility', 2)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(260): yii\db\Command->bindPendingParams()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/directory/controllers/DirectoryController.php(157): yii\db\ActiveQuery->all()
+#7 [internal function]: humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('spaces', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('directory/direc...', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+Failed to prepare SQL: SELECT * FROM `space` WHERE <> in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:264
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/directory/controllers/DirectoryController.php(157): yii\db\ActiveQuery->all()
+#5 [internal function]: humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('spaces', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('directory/direc...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => HY093
+    [1] => 0
+)
+
+2019-10-14 16:45:56 [::1][13][78bbf6526983fdd073d82df473dd2e4f][info][application] $_GET = [
+    'r' => 'directory/directory/spaces'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XaSKJLDxBWzVtShlUpjzawAAAAQ'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=directory%2Fdirectory%2Fgroups'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_groups-statistics-panel=expanded; pm_spaces-statistics-panel=expanded; PHPSESSID=78bbf6526983fdd073d82df473dd2e4f; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; _csrf=7bf7f9f55d841be6050c1ad634ccff9ae598539cde919a5f5beb89801695378ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22by4WLg43p-oT4aUzwfpgLYCk16gO77Aj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60454'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=directory%2Fdirectory%2Fspaces'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=directory%2Fdirectory%2Fspaces'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571064356.864
+    'REQUEST_TIME' => 1571064356
+]
+2019-10-14 16:46:14 [::1][13][78bbf6526983fdd073d82df473dd2e4f][error][yii\db\Exception] PDOException: SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:316
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(316): PDOStatement->bindValue(0, 'visibility', 2)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(260): yii\db\Command->bindPendingParams()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/directory/controllers/DirectoryController.php(157): yii\db\ActiveQuery->all()
+#7 [internal function]: humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('spaces', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('directory/direc...', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY093]: Invalid parameter number: Columns/Parameters are 1-based
+Failed to prepare SQL: SELECT * FROM `space` WHERE <> in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:264
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Query.php(237): yii\db\Command->queryAll()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/directory/controllers/DirectoryController.php(157): yii\db\ActiveQuery->all()
+#5 [internal function]: humhub\modules\directory\controllers\DirectoryController->actionSpaces()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('spaces', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('directory/direc...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => HY093
+    [1] => 0
+)
+
+2019-10-14 16:46:14 [::1][13][78bbf6526983fdd073d82df473dd2e4f][info][application] $_GET = [
+    'r' => 'directory/directory/spaces'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XaSKNsKYtR2lV63YlU6BkQAAAAY'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=directory%2Fdirectory%2Fgroups'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_groups-statistics-panel=expanded; pm_spaces-statistics-panel=expanded; PHPSESSID=78bbf6526983fdd073d82df473dd2e4f; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; _csrf=7bf7f9f55d841be6050c1ad634ccff9ae598539cde919a5f5beb89801695378ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22by4WLg43p-oT4aUzwfpgLYCk16gO77Aj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60464'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=directory%2Fdirectory%2Fspaces'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=directory%2Fdirectory%2Fspaces'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571064374.84
+    'REQUEST_TIME' => 1571064374
+]
+2019-10-20 12:53:12 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 543) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:53:12 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '543'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw8mOM9y1b0DvGjrVqI3wAAAAU'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JvBoNFQssggkGe9HJk6iKVemVhTCNOE8ABTKSKz8BvxCpj95PxvhSVJomBcQI_NZDZ4xJK9aqwhybZoK5K5Mlg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60760'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571568792.315
+    'REQUEST_TIME' => 1571568792
+]
+2019-10-20 12:53:12 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 543) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:53:12 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '543'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw8mFHXtYOHY07RjnkPggAAAAE'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JvBoNFQssggkGe9HJk6iKVemVhTCNOE8ABTKSKz8BvxCpj95PxvhSVJomBcQI_NZDZ4xJK9aqwhybZoK5K5Mlg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571568792.712
+    'REQUEST_TIME' => 1571568792
+]
+2019-10-20 12:53:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 543) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:53:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '543'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw8tymxyewVv46Lkuo5HAAAAAc'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JvBoNFQssggkGe9HJk6iKVemVhTCNOE8ABTKSKz8BvxCpj95PxvhSVJomBcQI_NZDZ4xJK9aqwhybZoK5K5Mlg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571568823.148
+    'REQUEST_TIME' => 1571568823
+]
+2019-10-20 12:53:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 543) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:53:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '543'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw8t6mjcYEZKJ2eewkhQwAAAAg'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JvBoNFQssggkGe9HJk6iKVemVhTCNOE8ABTKSKz8BvxCpj95PxvhSVJomBcQI_NZDZ4xJK9aqwhybZoK5K5Mlg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571568823.366
+    'REQUEST_TIME' => 1571568823
+]
+2019-10-20 12:53:44 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 543) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:53:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '543'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw8t13HSBLNH09ndIeAfAAAAAM'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JvBoNFQssggkGe9HJk6iKVemVhTCNOE8ABTKSKz8BvxCpj95PxvhSVJomBcQI_NZDZ4xJK9aqwhybZoK5K5Mlg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571568823.981
+    'REQUEST_TIME' => 1571568823
+]
+2019-10-20 12:53:44 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 543) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:53:44 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '543'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw8uAYcT7oQxTKZCGAAgwAAAAA'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JvBoNFQssggkGe9HJk6iKVemVhTCNOE8ABTKSKz8BvxCpj95PxvhSVJomBcQI_NZDZ4xJK9aqwhybZoK5K5Mlg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=543&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571568824.197
+    'REQUEST_TIME' => 1571568824
+]
+2019-10-20 12:58:32 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 508) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:58:32 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '508'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw92N9FtXmpKheBGx4QdgAAAAQ'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'vdvGws2O78_Lu16z4iDYMje5LmKU27Ofz3-eCjEVwzTZjZGPprm8jr3KKePUTYlCbYFJUvm1-au9Bs5IeUeJXg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33054'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=508&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=508&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571569112.021
+    'REQUEST_TIME' => 1571569112
+]
+2019-10-20 12:58:32 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 508) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 12:58:32 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '508'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw92OM9y1b0DvGjrVqI6AAAAAU'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'vdvGws2O78_Lu16z4iDYMje5LmKU27Ofz3-eCjEVwzTZjZGPprm8jr3KKePUTYlCbYFJUvm1-au9Bs5IeUeJXg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33044'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=508&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=508&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571569112.33
+    'REQUEST_TIME' => 1571569112
+]
+2019-10-20 13:00:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE (content.id < 508) AND ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN (SELECT `contentcontainer`.`id` FROM `user_follow` LEFT JOIN `contentcontainer` ON contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model WHERE user_follow.user_id=13 AND (user_follow.object_model = 'humhub\\modules\\space\\models\\Space' OR user_follow.object_model = 'humhub\\modules\\user\\models\\User') UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%__%' OR sm.id=) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 304 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.clas' at line 1
+)
+
+2019-10-20 13:00:43 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '508'
+        'limit' => '4'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xaw@W13HSBLNH09ndIeAgQAAAAM'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'vdvGws2O78_Lu16z4iDYMje5LmKU27Ofz3-eCjEVwzTZjZGPprm8jr3KKePUTYlCbYFJUvm1-au9Bs5IeUeJXg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '34150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=508&StreamQuery%5Blimit%5D=4'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=508&StreamQuery%5Blimit%5D=4'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571569243.181
+    'REQUEST_TIME' => 1571569243
+]
+2019-10-20 13:54:22 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][error][yii\db\Exception] PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `' at line 1 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php:1258
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1258): PDOStatement->execute()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+
+Next yii\db\Exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `' at line 1
+The SQL being executed was: SELECT `content`.* FROM `content` LEFT JOIN `user` ON `content`.`created_by` = `user`.`id` LEFT JOIN `contentcontainer` ON `content`.`contentcontainer_id` = `contentcontainer`.`id` LEFT JOIN `space_membership` ON contentcontainer.pk=space_membership.space_id AND space_membership.user_id=13 AND space_membership.status=3 WHERE ((content.archived != 1 OR content.archived IS NULL)) AND (`content`.`stream_channel`='default') AND (contentcontainer.id IN ( UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `sm` ON sm.id=space_membership.space_id LEFT JOIN `contentcontainer` ON contentcontainer.pk=sm.id AND contentcontainer.class = 'humhub\\modules\\space\\models\\Space' WHERE space_membership.user_id=13 AND space_membership.show_at_dashboard = 1 AND (sm.community LIKE '%_62_%' OR sm.id=62) UNION SELECT `cc`.`id` FROM `contentcontainer` `cc` WHERE cc.pk=13 AND cc.class='humhub\\modules\\user\\models\\User') OR contentcontainer.id IS NULL) AND ( (contentcontainer.class='humhub\\modules\\user\\models\\User' AND content.visibility=0 AND content.created_by = 13) OR  (contentcontainer.class='humhub\\modules\\space\\models\\Space' AND content.visibility = 0 AND space_membership.status = 3) OR  (content.visibility = 1 OR content.visibility IS NULL) OR (content.visibility = 0 AND content.contentcontainer_id=17) ) ORDER BY `content`.`id` DESC LIMIT 308 in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT `content...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT `content...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(138): yii\db\Command->query()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(112): yii\db\BatchQueryResult->fetchData()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BatchQueryResult.php(102): yii\db\BatchQueryResult->next()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/models/StreamSuppressQuery.php(108): yii\db\BatchQueryResult->rewind()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/stream/actions/Stream.php(223): humhub\modules\stream\models\StreamSuppressQuery->all()
+#8 [internal function]: humhub\modules\stream\actions\Stream->run()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\Action->runWithParams(Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('cstream', Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNION SELECT `contentcontainer`.`id` FROM `space_membership` LEFT JOIN `space` `' at line 1
+)
+
+2019-10-20 13:54:22 [::1][13][9cb67e7ea85d08302e96d54032c58dd8][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/cstream'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+    ]
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XaxK7qmjcYEZKJ2eewkhcgAAAAg'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '_UivZkGFHvb47dQ63wCycW6fWm7RQ41OBJ4GYBziAD6ZHvgrKrJNt46co2rpbeMBNKc9Xrwtx3p251YiVLBKVA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=space%2Fspace&cguid=dc97e8c6-1704-4388-9d02-c5624cb9c486'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=9cb67e7ea85d08302e96d54032c58dd8; _csrf=c4b91b494a1fe7aa356d3d366ff778ef00e118e780659802874b682b5698549ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dVWMk7SAvqwP6mQpZ8g0mnJ4ryPBHRJj%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '34946'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=dashboard%2Fdashboard%2Fcstream&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1571572462.496
+    'REQUEST_TIME' => 1571572462
+]
+2019-10-29 23:39:41 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: humhub\modules\ui\view\components\View::layout in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/container/markdown.php(16): yii\base\Component->__get('layout')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('markdown', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(71): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-29 23:39:41 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xbi-rYafTULOSJrz0F5ihwAAAAU'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '53472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572388781.322
+    'REQUEST_TIME' => 1572388781
+]
+2019-10-29 23:45:04 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: memberships in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/container/markdown.php:14
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/container/markdown.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 14, Array)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('markdown', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(71): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-29 23:45:04 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjA8MoC0sFbaoJ1os4o3QAAAAA'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '56086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572389104.761
+    'REQUEST_TIME' => 1572389104
+]
+2019-10-29 23:51:25 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/layout_community.php in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(72): yii\base\Controller->render('markdown', Array)
+#3 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#10 {main}
+2019-10-29 23:51:25 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjCbaDP8MmjpqW7mNm@FwAAAAY'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '59288'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572389485.224
+    'REQUEST_TIME' => 1572389485
+]
+2019-10-29 23:52:51 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/protected/humhub/modules/space/views/space/_layout_community.php in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(72): yii\base\Controller->render('markdown', Array)
+#3 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#10 {main}
+2019-10-29 23:52:51 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjCw61zbTWTgaO47mKe7gAAAAg'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '59976'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572389571.036
+    'REQUEST_TIME' => 1572389571
+]
+2019-10-29 23:53:25 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/_layout_community.php in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php:233
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(72): yii\base\Controller->render('markdown', Array)
+#3 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#10 {main}
+2019-10-29 23:53:25 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjC5VfT4p1Cs7wdatB5XAAAAAE'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '60260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572389605.682
+    'REQUEST_TIME' => 1572389605
+]
+2019-10-29 23:56:42 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: spaceList in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php:17
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(72): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-29 23:56:42 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjDqpXdzJxzN3j@EK0bWAAAAAc'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572389802.583
+    'REQUEST_TIME' => 1572389802
+]
+2019-10-29 23:58:44 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: spaceList in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php:17
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(72): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-29 23:58:44 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjEJK1zbTWTgaO47mKe7wAAAAg'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '34590'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572389924.666
+    'REQUEST_TIME' => 1572389924
+]
+2019-10-30 00:02:18 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: spaceList in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php:17
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(80): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-30 00:02:18 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjE@lfT4p1Cs7wdatB5XQAAAAE'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '36300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572390138.219
+    'REQUEST_TIME' => 1572390138
+]
+2019-10-30 00:03:21 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: humhub\modules\ui\view\components\View::contentContainer in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php(17): yii\base\Component->__get('contentContaine...')
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(80): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-30 00:03:20 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjFOJXdzJxzN3j@EK0bWQAAAAc'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '36800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572390200.867
+    'REQUEST_TIME' => 1572390200
+]
+2019-10-30 00:05:06 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: contentContainer in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php:17
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/views/layouts/_layout_community.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 17, Array)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(336): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/View.php(254): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Controller.php(135): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(humhub\modules\custom_pages\controllers\ContainerController))
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(385): humhub\components\Controller->renderContent('<div class="con...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/custom_pages/controllers/ContainerController.php(80): yii\base\Controller->render('markdown', Array)
+#6 [internal function]: humhub\modules\custom_pages\controllers\ContainerController->actionView()
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('custom_pages/co...', Array)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#13 {main}
+2019-10-30 00:05:05 [::1][13][f102e0f59c59d9f7ce2701d3afe352f2][info][application] $_GET = [
+    'r' => 'custom_pages/container/view'
+    'id' => '4'
+    'cguid' => 'c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XbjFoc5-cWs-rKkvoL3FQQAAAAQ'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/77.0.3865.90 Chrome/77.0.3865.90 Safari/537.36'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_space-members-panel=expanded; pm_space-gallery-snippet=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=f102e0f59c59d9f7ce2701d3afe352f2; _csrf=84cea31710362c3f92902f354efd4b2c05d0addfd0d110c5b2c37463b8580608a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22td2L5Fa0n0hkPjhxMqL5Axksu401qU7c%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '37646'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=custom_pages%2Fcontainer%2Fview&id=4&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1572390305.908
+    'REQUEST_TIME' => 1572390305
+]

@@ -26,7 +26,21 @@ $memberships = $this->params['spaceList'];
     <div class="row space-content">
         <div class="col-md-2 layout-nav-container">
             <?= Menu::widget(['space' => $space]); ?>
-            <br>
+            <div class="panel panel-default left-navigation">
+                <div class="panel-heading">
+
+                    <?php foreach ($memberships as $membership) : ?>
+                        <?=
+                        SpaceChooserItemCustom::widget([
+                            'space' => $membership->space,
+                            'updateCount' => $membership->countNewItems(),
+                            'isMember' => true
+                        ]);
+                        ?>
+
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
         <div class="col-md-<?= ($this->hasSidebar()) ? '7' : '10' ?> layout-content-container">
             <?= SpaceContent::widget(['contentContainer' => $space, 'content' => $content]) ?>

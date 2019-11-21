@@ -124,7 +124,7 @@ class SpaceController extends ContentContainerController {
         $space = $this->contentContainer;
         $canCreatePosts = $space->permissionManager->can(new CreatePost());
         $isMember = $space->isMember();
-        Yii::$app->session->setFlash('community_id',  $space->id);
+        Yii::$app->session->set('community_id',  $space->id);
 
         return $this->render('community', [
                     'space' => $space,

@@ -154,7 +154,11 @@ class DirectoryController extends Controller
         if($keyword != '') {
             $spaces = $searchResultSet->getResultInstances();
         } else {
-            $spaces = Space::find()->all();
+            $spaces = Space::find()
+                ->leftJoin('space_membership', 'space.id=space_membership.space_id')
+                ->where(['space_membership.user_id' => Yii::$app->user->id])
+                ->orWhere(['<>', 'space.visibility', '0'])
+                ->all();
         }
 
         return $this->render('spaces', [

@@ -72,18 +72,18 @@ class DashboardCommunityStreamAction extends ActivityStreamAction
     {
         $friendshipEnabled = Yii::$app->getModule('friendship')->getIsEnabled();
         $dashboardModule = Yii::$app->getModule('dashboard');
-        $community_id = Yii::$app->session->getFlash('community_id');
+        $community_id = Yii::$app->session->get('community_id');
 
         /**
          * Collect all wall_ids we need to include into dashboard stream
          */
         // Following (User to Space/User)
-        $userFollows = (new Query())
-            ->select(["contentcontainer.id"])
-            ->from('user_follow')
-            ->leftJoin('contentcontainer', 'contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model')
-            ->where('user_follow.user_id=' . $this->user->id . ' AND (user_follow.object_model = :spaceClass OR user_follow.object_model = :userClass)');
-        $union = Yii::$app->db->getQueryBuilder()->build($userFollows)[0];
+//        $userFollows = (new Query())
+//            ->select(["contentcontainer.id"])
+//            ->from('user_follow')
+//            ->leftJoin('contentcontainer', 'contentcontainer.pk=user_follow.object_id AND contentcontainer.class=user_follow.object_model')
+//            ->where('user_follow.user_id=' . $this->user->id . ' AND (user_follow.object_model = :spaceClass OR user_follow.object_model = :userClass)');
+//        $union = Yii::$app->db->getQueryBuilder()->build($userFollows)[0];
 
         // User to space memberships
         $spaceMemberships = (new Query())
@@ -91,8 +91,8 @@ class DashboardCommunityStreamAction extends ActivityStreamAction
             ->from('space_membership')
             ->leftJoin('space sm', 'sm.id=space_membership.space_id')
             ->leftJoin('contentcontainer', 'contentcontainer.pk=sm.id AND contentcontainer.class = :spaceClass')
-            ->where('space_membership.user_id=' . $this->user->id . ' AND space_membership.show_at_dashboard = 1' . ' AND (sm.community LIKE ' . "'%_" . $community_id . "_%'" . ' OR sm.id=' . $community_id . ')');
-        $union .= " UNION " . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0];
+            ->where('space_membership.user_id=' . $this->user->id . ' AND space_membership.show_at_dashboard = 1' . ' AND (sm.community LIKE ' . "'_" . $community_id . "_'" . ' OR sm.id=' . $community_id . ')');
+        $union = Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0];
         
 //        $publicSpacesSql = (new Query())
 //            ->select(["contentcontainer.id"])

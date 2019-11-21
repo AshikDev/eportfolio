@@ -17,6 +17,7 @@ use yii\helpers\Html;
                 'width' => 24,
                 'htmlOptions' => [
                     'class' => 'pull-left',
+                    'style' => 'margin-right: 5px;'
             ]]);
             ?>
 
@@ -28,7 +29,11 @@ use yii\helpers\Html;
                     <?= $updateCount; ?>
                 </div>
                 <br>
-                <p><?= Html::encode(Helpers::truncateText($space->description, 60)); ?></p>
+                <p>
+                    <?php
+                    // echo Html::encode(Helpers::truncateText($space->description, 60));
+                    ?>
+                </p>
             </div>
         </div>
     </a>

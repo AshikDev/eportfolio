@@ -175,11 +175,19 @@ class AuthController extends Controller
                 }
             }
 
+            $newUser = false;
+            if($user->last_login == '' || $user->last_login == null || empty($user->last_login)) {
+                $newUser = true;
+                $redirectUrl = ['/directory/directory/spaces'];
+            }
+
             AuthClientHelpers::updateUser($authClient, $user);
 
             if (Yii::$app->user->login($user, $duration)) {
                 Yii::$app->user->setCurrentAuthClient($authClient);
-                $redirectUrl = Yii::$app->user->returnUrl;
+                if(!$newUser) {
+                    $redirectUrl = Yii::$app->user->returnUrl;
+                }
             }
         } elseif ($user->status == User::STATUS_DISABLED) {
             Yii::$app->session->setFlash('error', Yii::t('UserModule.base', 'Your account is disabled!'));

@@ -30,7 +30,7 @@ if ($canCreatePosts) {
 //]);
 
 echo humhub\modules\dashboard\widgets\DashboardContentCommunity::widget([
-    'contentContainer' => $space,
+    'contentContainer' => $space
 ]);
 
 //echo humhub\modules\community\widgets\DashboardContent::widget([
