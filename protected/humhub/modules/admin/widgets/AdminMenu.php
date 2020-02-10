@@ -71,6 +71,17 @@ class AdminMenu extends \humhub\widgets\BaseMenu
         ]);
 
         $this->addItem([
+            'label' => Yii::t('AdminModule.widgets_AdminMenuWidget', 'Welcome Box Edit'),
+            'id' => 'modules',
+            'url' => Url::toRoute('/admin/welcome'),
+            'icon' => '<i class="fa fa-info-circle"></i>',
+            'sortOrder' => 550,
+            'newItemCount' => 0,
+            'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'admin' && Yii::$app->controller->id == 'welcome'),
+            'isVisible' => Yii::$app->user->can(new \humhub\modules\admin\permissions\ManageModules())
+        ]);
+
+        $this->addItem([
             'label' => Yii::t('AdminModule.widgets_AdminMenuWidget', 'Settings'),
             'url' => Url::toRoute('/admin/setting'),
             'icon' => '<i class="fa fa-gears"></i>',

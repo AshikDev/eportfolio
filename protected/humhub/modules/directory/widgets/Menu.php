@@ -72,6 +72,16 @@ class Menu extends \humhub\widgets\BaseMenu
             ]);
         }
 
+        if ($module->showUserProfilePosts) {
+            $this->addItem([
+                'label' => Yii::t('DirectoryModule.base', 'Welcome Box'),
+                'group' => 'directory',
+                'url' => Url::to(['/directory/directory/welcome']),
+                'sortOrder' => 500,
+                'isActive' => (Yii::$app->controller->action->id == "welcome"),
+            ]);
+        }
+
         parent::init();
     }
 

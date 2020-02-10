@@ -2,6 +2,8 @@
 
 namespace humhub\modules\calendar\controllers;
 
+use humhub\modules\content\models\ContentContainer;
+use humhub\modules\space\models\Space;
 use Yii;
 use yii\web\HttpException;
 use humhub\modules\calendar\models\DefaultSettings;
@@ -82,6 +84,7 @@ class EntryController extends ContentContainerController
         if (empty($id) && $this->canCreateEntries()) {
             $calendarEntryForm = new CalendarEntryForm();
             $calendarEntryForm->createNew($this->contentContainer, $start, $end);
+
         } else {
             $calendarEntryForm = new CalendarEntryForm(['entry' => $this->getCalendarEntry($id)]);
             if(!$calendarEntryForm->entry->content->canEdit()) {
@@ -94,6 +97,50 @@ class EntryController extends ContentContainerController
         }
 
         if ($calendarEntryForm->load(Yii::$app->request->post()) && $calendarEntryForm->save()) {
+
+            if($calendarEntryForm->to_be_continued) {
+                $next = strtotime(date("n/j/y", strtotime($calendarEntryForm->start_date)) . "+1 week");
+                $nextWeek = date('n/j/y', $next);
+                $nextEnd = strtotime(date("n/j/y", strtotime($calendarEntryForm->end_date)) . "+1 week");
+                $nextWeekEnd = date('n/j/y', $nextEnd);
+                $calendarEntryForm->start_date = $nextWeek;
+                $calendarEntryForm->end_date = $nextWeekEnd;
+                $calendarEntryForm->createNew($this->contentContainer, $start, $end);
+                $calendarEntryForm->load(Yii::$app->request->post());
+                $calendarEntryForm->save();
+                var_dump($start);
+            }
+
+            if($this->contentContainer->community != '_0_' && $calendarEntryForm->is_public) {
+
+                $parentsFormat = trim($this->contentContainer->community, '_');
+                $spaceParentsIds = explode('_', $parentsFormat);
+
+                $spaceParents = Space::find()
+                    ->select('guid')
+                    ->where(['in', 'id', $spaceParentsIds])
+                    ->all();
+
+                if(isset($spaceParents) && !empty($spaceParents)) {
+                    foreach ($spaceParents as $spaceParent) {
+
+                        $contentContainerChild = ContentContainer::find()->where(['guid' => $spaceParent->guid])->one();
+
+                        if(!empty($contentContainerChild)) {
+
+                            $container = $contentContainerChild->getPolymorphicRelation();
+
+                            $calendarEntryFormChild = new CalendarEntryForm();
+                            $calendarEntryFormChild->createNew($container, $start, $end);
+                            $calendarEntryFormChild->load(Yii::$app->request->post());
+                            $calendarEntryFormChild->save();
+                        }
+
+                    }
+                }
+
+            }
+
             if(empty($cal)) {
                 return ModalClose::widget(['saved' => true]);
             } else {

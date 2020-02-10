@@ -44,6 +44,17 @@ use yii\jui\DatePicker;
     <?= $form->field($calendarEntryForm, 'is_public')->checkbox() ?>
     <?= $form->field($calendarEntryForm->entry, 'all_day')->checkbox(['data-action-change' => 'toggleDateTime']) ?>
 
+    <div class="row">
+        <div class="col-md-6">
+            <?= $form->field($calendarEntryForm, 'to_be_continued')->checkbox() ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($calendarEntryForm, 'week')
+                ->dropDownList(['1' => 'Per Week', '2' => 'Per Two Weeks', '3' => 'Monthly'], ['prompt' => 'Select Interval', 'disabled' =>  $calendarEntryForm->to_be_continued])->label(false) ?>
+        </div>
+    </div>
+
+
     <?php Yii::$app->formatter->timeZone = $calendarEntryForm->timeZone ?>
 
     <div class="row">
@@ -54,8 +65,6 @@ use yii\jui\DatePicker;
             <?= $form->field($calendarEntryForm, 'start_time')->widget(TimePicker::class, ['disabled' => $calendarEntryForm->entry->all_day]); ?>
         </div>
     </div>
-
-
 
     <div class="row">
         <div class="col-md-6">

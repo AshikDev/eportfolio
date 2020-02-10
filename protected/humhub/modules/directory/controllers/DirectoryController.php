@@ -8,6 +8,7 @@
 
 namespace humhub\modules\directory\controllers;
 
+use humhub\models\Welcome;
 use humhub\modules\directory\components\UserPostsStreamAction;
 use humhub\modules\directory\components\Controller;
 use humhub\modules\user\models\Group;
@@ -200,6 +201,14 @@ class DirectoryController extends Controller
     public function actionUserPosts()
     {
         return $this->render('userPosts', []);
+    }
+
+    public function actionWelcome()
+    {
+        $welcomeModel = Welcome::find()->one();
+        return $this->render('welcome', [
+            'welcomeModel' => $welcomeModel
+        ]);
     }
 
 }

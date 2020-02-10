@@ -36,6 +36,10 @@ class CalendarEntryForm extends Model
      */
     public $is_public;
 
+    public $to_be_continued;
+
+    public $week;
+
     /**
      * @var string start date submitted by user will be converted to db date format and timezone after validation
      */
@@ -120,8 +124,8 @@ class CalendarEntryForm extends Model
     {
         return [
             [['timeZone'], 'in', 'range' => DateTimeZone::listIdentifiers()],
-            [['topics'], 'safe'],
-            [['is_public', 'type_id', 'sendUpdateNotification', 'forceJoin'], 'integer'],
+            [['topics', 'week'], 'safe'],
+            [['is_public', 'to_be_continued', 'type_id', 'sendUpdateNotification', 'forceJoin'], 'integer'],
             [['start_time', 'end_time'], 'date', 'type' => 'time', 'format' => $this->getTimeFormat()],
             [['start_date'], DbDateValidator::class, 'format' => Yii::$app->params['formatter']['defaultDateFormat'], 'timeAttribute' => 'start_time', 'timeZone' => $this->timeZone],
             [['end_date'], DbDateValidator::class, 'format' => Yii::$app->params['formatter']['defaultDateFormat'], 'timeAttribute' => 'end_time', 'timeZone' => $this->timeZone],
@@ -191,6 +195,7 @@ class CalendarEntryForm extends Model
             'end_time' => Yii::t('CalendarModule.base', 'End Time'),
             'timeZone' => Yii::t('CalendarModule.base', 'Time Zone'),
             'is_public' => Yii::t('CalendarModule.base', 'Public'),
+            'to_be_continued' => Yii::t('CalendarModule.base', 'To Be Continued'),
             'sendUpdateNotification' => Yii::t('CalendarModule.base', 'Send update notification'),
             'forceJoin' => ($this->entry->isNewRecord)
                 ? Yii::t('CalendarModule.base', 'Add all space members to this event')

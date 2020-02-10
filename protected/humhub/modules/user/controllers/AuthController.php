@@ -178,7 +178,7 @@ class AuthController extends Controller
             $newUser = false;
             if($user->last_login == '' || $user->last_login == null || empty($user->last_login)) {
                 $newUser = true;
-                $redirectUrl = ['/directory/directory/spaces'];
+                $redirectUrl = ['/directory/directory/welcome'];
             }
 
             AuthClientHelpers::updateUser($authClient, $user);
