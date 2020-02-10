@@ -1,4 +1,4 @@
 ResearchHub - Social Network Platform
 ===========================
-Based on Yii2 Framework
+Based on Humhub and Yii2 Framework
 
