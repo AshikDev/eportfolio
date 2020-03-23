@@ -40,9 +40,9 @@ class Events
         if (SnippetModuleSettings::instantiate()->showGlobalCalendarItems()) {
             $event->sender->addItem([
                 'label' => Yii::t('CalendarModule.base', 'Calendar'),
-                'url' => Url::to(['/calendar/global/index']),
+                'url' => Url::to(['/calendar/hub/index']),
                 'icon' => '<i class="fa fa-calendar"></i>',
-                'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'calendar' && Yii::$app->controller->id == 'global'),
+                'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'calendar' && Yii::$app->controller->id == 'hub'),
                 'sortOrder' => 300,
             ]);
         }
@@ -51,16 +51,18 @@ class Events
     public static function onSpaceMenuInit($event)
     {
         $space = $event->sender->space;
+
         if ($space->isModuleEnabled('calendar')) {
             $event->sender->addItem([
                 'label' => Yii::t('CalendarModule.base', 'Calendar'),
                 'group' => 'modules',
-                'url' => $space->createUrl('/calendar/view/index'),
+                'url' => $space->createUrl('/calendar/community/index'),
                 'icon' => '<i class="fa fa-calendar"></i>',
                 'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'calendar'),
 
             ]);
         }
+
     }
 
     public static function onProfileMenuInit($event)

@@ -66,11 +66,12 @@ class DirectoryController extends Controller
      */
     public function actionIndex()
     {
-        if ($this->module->isGroupListingEnabled()) {
-            return $this->redirect(['groups']);
-        } else {
-            return $this->redirect(['members']);
-        }
+        return $this->redirect(['spaces']);
+//        if ($this->module->isGroupListingEnabled()) {
+//            return $this->redirect(['groups']);
+//        } else {
+//            return $this->redirect(['members']);
+//        }
     }
 
     /**

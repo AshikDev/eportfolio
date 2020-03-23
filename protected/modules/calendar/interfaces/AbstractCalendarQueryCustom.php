@@ -26,7 +26,7 @@ use yii\base\Component;
  * @todo change base class back to BaseObject after v1.3 is stable
  */
 
-abstract class AbstractCalendarQuery extends Component
+abstract class AbstractCalendarQueryCustom extends Component
 {
     /**
      * @var string Defines the ActiveRecord class used for this query
@@ -188,6 +188,16 @@ abstract class AbstractCalendarQuery extends Component
         if (!empty($scopes)) {
             $scopes = (is_array($scopes)) ? $scopes : [$scopes];
             $this->_userScopes = $scopes;
+        }
+
+        return $this;
+    }
+
+    public function hubs($spaces = [1234567890])
+    {
+        if (!empty($spaces)) {
+            $spaces = (is_array($spaces)) ? $spaces : [$spaces];
+            $this->_hubSelected = $spaces;
         }
 
         return $this;
@@ -742,7 +752,16 @@ abstract class AbstractCalendarQuery extends Component
     protected function filterUserRelated()
     {
         if($this->_query instanceof ActiveQueryContent) {
-            $this->_query->userRelated($this->_userScopes);
+            $this->userRelated($this->_userScopes);
+        } else {
+            throw new FilterNotSupportedException('User related filter not supported for this query');
+        }
+    }
+
+    protected function filterHubs()
+    {
+        if($this->_query instanceof ActiveQueryContent) {
+            $this->userRelated($this->_hubSelected);
         } else {
             throw new FilterNotSupportedException('User related filter not supported for this query');
         }

@@ -17,10 +17,11 @@ namespace humhub\modules\calendar\interfaces;
 
 use DateInterval;
 use DateTime;
+use humhub\modules\calendar\models\CalendarEntryQueryCustom;
 use humhub\modules\calendar\models\CalendarEntryQuery;
 use humhub\modules\content\components\ContentContainerActiveRecord;
-use yii\base\Component;
 use yii\helpers\ArrayHelper;
+
 
 /**
  * This service component supports integration functionality and is responsible for retrieving
@@ -33,7 +34,7 @@ use yii\helpers\ArrayHelper;
  * ```
  * @package humhub\modules\calendar\interfaces
  */
-class CalendarService extends Component
+class CalendarServiceCustom extends CalendarService
 {
     /**
      * Used for assembling all available item types provided by other modules
@@ -120,6 +121,7 @@ class CalendarService extends Component
             }
         }
 
+        // $calendarEntries = CalendarEntryQueryCustom::findForFilter($start, $end, $contentContainer, $filters, $limit);
         $calendarEntries = CalendarEntryQuery::findForFilter($start, $end, $contentContainer, $filters, $limit);
 
         $result = array_merge($calendarEntries, $result);

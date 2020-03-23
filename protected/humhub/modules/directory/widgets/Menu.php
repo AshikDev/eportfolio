@@ -36,12 +36,20 @@ class Menu extends \humhub\widgets\BaseMenu
             'sortOrder' => 100,
         ]);
 
+        $this->addItem([
+            'label' => Yii::t('DirectoryModule.base', 'Hub'),
+            'group' => 'directory',
+            'url' => Url::to(['/directory/directory/spaces']),
+            'sortOrder' => 100,
+            'isActive' => (Yii::$app->controller->action->id == "spaces"),
+        ]);
+
         if (Yii::$app->getModule('directory')->isGroupListingEnabled()) {
             $this->addItem([
                 'label' => Yii::t('DirectoryModule.base', 'Groups'),
                 'group' => 'directory',
                 'url' => Url::to(['/directory/directory/groups']),
-                'sortOrder' => 100,
+                'sortOrder' => 200,
                 'isActive' => (Yii::$app->controller->action->id == "groups"),
             ]);
         }
@@ -50,16 +58,8 @@ class Menu extends \humhub\widgets\BaseMenu
             'label' => Yii::t('DirectoryModule.base', 'Members'),
             'group' => 'directory',
             'url' => Url::to(['/directory/directory/members']),
-            'sortOrder' => 200,
-            'isActive' => (Yii::$app->controller->action->id == "members"),
-        ]);
-
-        $this->addItem([
-            'label' => Yii::t('DirectoryModule.base', 'Hub'),
-            'group' => 'directory',
-            'url' => Url::to(['/directory/directory/spaces']),
             'sortOrder' => 300,
-            'isActive' => (Yii::$app->controller->action->id == "spaces"),
+            'isActive' => (Yii::$app->controller->action->id == "members"),
         ]);
 
         if ($module->showUserProfilePosts) {

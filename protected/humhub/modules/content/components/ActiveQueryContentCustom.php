@@ -16,18 +16,18 @@ use Yii;
 use yii\db\Expression;
 
 /**
- * ActiveQueryContent is an enhanced ActiveQuery with additional selectors for especially content.
+ * ActiveQueryContentCustom is an enhanced ActiveQuery with additional selectors for especially content.
  *
  * @inheritdoc
  *
  * @author luke
  */
-class ActiveQueryContent extends \yii\db\ActiveQuery
+class ActiveQueryContentCustom extends \yii\db\ActiveQuery
 {
 
     /**
      * Own content scope for userRelated
-     * @see ActiveQueryContent::userRelated
+     * @see ActiveQueryContentCustom::userRelated
      */
     const USER_RELATED_SCOPE_OWN = 1;
     const USER_RELATED_SCOPE_SPACES = 2;
@@ -39,7 +39,7 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
      * Only returns user readable records
      *
      * @param \humhub\modules\user\models\User $user
-     * @return \humhub\modules\content\components\ActiveQueryContent
+     * @return \humhub\modules\content\components\ActiveQueryContentCustom
      * @throws \Throwable
      */
     public function readable($user = null)
@@ -93,7 +93,7 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
      * Limits the returned records to the given ContentContainer.
      *
      * @param ContentContainerActiveRecord $container |null or null for global content
-     * @return \humhub\modules\content\components\ActiveQueryContent
+     * @return \humhub\modules\content\components\ActiveQueryContentCustom
      * @throws \yii\base\Exception
      */
     public function contentContainer($container)
@@ -114,7 +114,7 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
      *
      * @param $contentTags ContentTag[]|ContentTag
      * @param $mode string
-     * @return ActiveQueryContent
+     * @return ActiveQueryContentCustom
      */
     public function contentTag($contentTags, $mode = 'AND')
     {
@@ -160,11 +160,11 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
 
     /**
      * Finds user related content.
-     * All available scopes: ActiveQueryContent::USER_RELATED_SCOPE_*
+     * All available scopes: ActiveQueryContentCustom::USER_RELATED_SCOPE_*
      *
      * @param array $scopes
      * @param User $user
-     * @return \humhub\modules\content\components\ActiveQueryContent
+     * @return \humhub\modules\content\components\ActiveQueryContentCustom
      */
     public function userRelated($scopes = [], $user = null)
     {
@@ -204,7 +204,7 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
                 }
             } else {
                 $spaceMemberships = (new \yii\db\Query())
-                    ->select('sm.id')
+                    ->select("sm.id")
                     ->from('space_membership')
                     ->leftJoin('space sm', 'sm.id=space_membership.space_id')
                     ->where('space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
