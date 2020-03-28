@@ -6,77 +6,11 @@
       <change beforePath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/controllers/DirectoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/controllers/DirectoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/directory/widgets/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/Events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub18a6da4a13ff7affbc96a92ec67fab05.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub18a6da4a13ff7affbc96a92ec67fab05.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191243c4d1.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31912492604.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319124a4bbe.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319124ac8c1.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319126ce72d.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31912702435.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31912723e8a.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319127ace3c.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31912ad930d.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31912bd0385.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31912fb1016.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31913174356.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31913582ee3.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319135d2192.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319139adeb5.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31913b81657.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31913c7957d.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319140adbdc.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31914477272.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319144d8161.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31914d5bcab.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31914dc53e6.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31915a1d2c9.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31915b0c355.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191621485c.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31916279c0d.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319166adf75.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191678d2ec.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319167d1377.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31916dad9fd.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31916e69d8e.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31916eb0573.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319171789c1.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31918079932.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31919178d95.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319193ad229.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31919aada88.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191a4786bb.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191b979382.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191c0ae06b.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191c7ad811.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191d179732.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191e86b8b4.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191e8c5312.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191e8d29cc.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191ec78da3.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191eeacc3f.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191f4ae496.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3191fb7902a.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31920a78922.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31921b79d20.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31921bacc21.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319222add48.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e3192276eb48.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319227d7359.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e319227f1db4.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31922804787.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/debug/5e31922e7af0d.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/views/hub/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/views/hub/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/widgets/CalendarFilterBarCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/widgets/CalendarFilterBarCustom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/widgets/views/calendarFilterBarCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/widgets/views/calendarFilterBarCustom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/debug/index.data" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/debug/index.data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/AbstractCalendarQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/AbstractCalendarQuery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemType.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemTypesEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemTypesEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemWrapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemWrapper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemsEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarItemsEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarService.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/CalendarService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/FilterNotSupportedException.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/module_backups/calendar_1578452075/interfaces/FilterNotSupportedException.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +150,12 @@
       <workItem from="1583494309297" duration="25494000" />
       <workItem from="1583580974333" duration="1546000" />
       <workItem from="1584987509183" duration="144000" />
-      <workItem from="1584987790278" duration="1327000" />
+      <workItem from="1584987790278" duration="14480000" />
+      <workItem from="1585050088147" duration="1894000" />
+      <workItem from="1585337129886" duration="28000" />
+      <workItem from="1585340025101" duration="9036000" />
+      <workItem from="1585431405246" duration="650000" />
+      <workItem from="1585433014556" duration="1891000" />
     </task>
     <servers />
   </component>
@@ -265,10 +204,10 @@
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="209" y="24" key="SettingsEditor/65.24.1301.744@65.24.1301.744" timestamp="1578417565790" />
-    <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1584988283361">
+    <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1585433187412">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="376" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1584988283361" />
+    <state x="376" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1585433187412" />
     <state x="389" y="89" width="950" height="646" key="find.popup" timestamp="1583534512878">
       <screen x="65" y="24" width="1301" height="744" />
     </state>

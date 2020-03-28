@@ -36,6 +36,7 @@ class Menu extends \humhub\widgets\BaseMenu
             'sortOrder' => 100,
         ]);
 
+        // Custom order
         $this->addItem([
             'label' => Yii::t('DirectoryModule.base', 'Hub'),
             'group' => 'directory',

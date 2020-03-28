@@ -66,6 +66,7 @@ class DirectoryController extends Controller
      */
     public function actionIndex()
     {
+        // Custom default directory
         return $this->redirect(['spaces']);
 //        if ($this->module->isGroupListingEnabled()) {
 //            return $this->redirect(['groups']);

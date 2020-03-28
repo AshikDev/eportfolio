@@ -33,7 +33,7 @@ use kartik\select2\Select2;
                                 <input id="my_spaces" type="checkbox" name="selector" class="selectorCheckbox"
                                        value="<?= ActiveQueryContent::USER_RELATED_SCOPE_SPACES; ?>"
                                        <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
-                                <?= Yii::t('CalendarModule.views_global_index', 'My spaces'); ?>
+                                <?= Yii::t('CalendarModule.views_global_index', 'My Hubs'); ?>
                             </label>
                         </div>
                     </div>
@@ -98,15 +98,22 @@ use kartik\select2\Select2;
                             id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Please select hubs <b class="caret"></b>
                     </button>
-                    <ul class="dropdown-menu" style="text-decoration: none">
+                    <ul class="dropdown-menu custom_menu" style="text-decoration: none">
+                        <li style="padding: 10px;">
+                            <div class="checkbox">
+                                <label class="calendar_my_profile">
+                                    <input type="checkbox" name="hubs"  class="selectorCheckbox" id="all_hubs" value="1234567890" checked="checked" disabled="disabled" /> Select All
+                                </label>
+                            </div>
+                        </li>
                         <?php
                         foreach ($spaceModelAll as $space) :
                             ?>
                             <li style="padding: 10px;">
                                 <div class="checkbox">
                                     <label class="calendar_my_profile">
-                                        <input type="checkbox" name="hubs" class="selectorCheckbox"
-                                               value="<?= $space['id'] + 1000; ?>"/> <?= $space['name']; ?>
+                                        <input type="checkbox" name="hubs" class="selectorCheckbox each_hub"
+                                               value="<?= $space['id'] + 1000; ?>" checked="checked" /> <?= $space['name']; ?>
                                     </label>
                                 </div>
                             </li>
@@ -126,20 +133,38 @@ use kartik\select2\Select2;
 
 if (!$spaceId) {
     $this->registerJs("
+    
+    $(document).on('click', 'ul.custom_menu', function (e) {
+      e.stopPropagation();
+    });
 
-        if($('#my_spaces').prop('checked') == true){
+    if($('#my_spaces').prop('checked') == true){
+      $('#hubs').removeClass( 'disabled' );
+    } else {
+        $('#hubs').addClass( 'disabled' );
+    }
+    
+    $(document).on('change','#my_spaces', function() {
+      if($('#my_spaces').prop('checked') == true){
           $('#hubs').removeClass( 'disabled' );
-        } else {
-            $('#hubs').addClass( 'disabled' );
+      } else {
+          $('#hubs').addClass( 'disabled' );
+      }        
+    });
+    
+    $('#all_hubs').change(function(){ 
+        $('.each_hub').prop('checked', $(this).prop('checked'));
+    });
+    
+    $('.each_hub').change(function(){ 
+        if(false == $(this).prop('checked')){
+            $('#all_hubs').prop('checked', false);
         }
-        
-        $(document).on('change','#my_spaces', function() {
-          if($('#my_spaces').prop('checked') == true){
-              $('#hubs').removeClass( 'disabled' );
-          } else {
-              $('#hubs').addClass( 'disabled' );
-          }
-        });
+    
+        if ($('.each_hub:checked').length == $('.each_hub').length ){
+            $('#all_hubs').prop('checked', true);
+        }
+    });
 
 ", \yii\web\View::POS_READY);
 }

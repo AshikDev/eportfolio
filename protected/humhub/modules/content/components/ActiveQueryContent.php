@@ -197,19 +197,19 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
                         ->select("sm.id")
                         ->from('space_membership')
                         ->leftJoin('space sm', 'sm.id=space_membership.space_id')
-                        ->where('space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
+                        ->where('sm.community=:community AND space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
                     $conditions[] = 'contentcontainer.pk IN (' . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0] . ') AND contentcontainer.class = :spaceClass AND space.id IN (' . $trimmedHubsString . ')';
+                    $params[':community'] = '_0_';
                     $params[':userId'] = $user->id;
                     $params[':spaceClass'] = Space::class;
                 }
             } else {
                 $spaceMemberships = (new \yii\db\Query())
                     ->select('sm.id')
-                    ->from('space_membership')
-                    ->leftJoin('space sm', 'sm.id=space_membership.space_id')
-                    ->where('space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
+                    ->from('space sm')
+                    ->where('sm.id=:space_id');
                 $conditions[] = 'contentcontainer.pk IN (' . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0] . ') AND contentcontainer.class = :spaceClass';
-                $params[':userId'] = $user->id;
+                $params[':space_id'] = '0';
                 $params[':spaceClass'] = Space::class;
             }
         }
