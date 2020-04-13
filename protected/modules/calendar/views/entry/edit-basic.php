@@ -41,19 +41,27 @@ use yii\jui\DatePicker;
 
     <?= $form->field($calendarEntryForm->entry, 'description')->widget(Markdown::class, ['fileModel' => $calendarEntryForm->entry, 'fileAttribute' => 'files'])->label(false) ?>
 
-    <?= $form->field($calendarEntryForm, 'is_public')->checkbox() ?>
-    <?= $form->field($calendarEntryForm->entry, 'all_day')->checkbox(['data-action-change' => 'toggleDateTime']) ?>
-
     <div class="row">
-        <div class="col-md-6">
-            <?= $form->field($calendarEntryForm, 'to_be_continued')->checkbox() ?>
+        <div class="col-md-4">
+            <?= $form->field($calendarEntryForm, 'to_be_continued')->checkbox(); ?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <?= $form->field($calendarEntryForm, 'week')
-                ->dropDownList(['1' => 'Per Week', '2' => 'Per Two Weeks', '3' => 'Monthly'], ['prompt' => 'Select Interval', 'disabled' =>  $calendarEntryForm->to_be_continued])->label(false) ?>
+                ->dropDownList(['1' => 'Every Week', '2' => 'Every Two Weeks', '3' => 'Every Month'], ['prompt' => 'Select Interval', 'disabled' =>  true])->label(false) ?>
+        </div>
+        <div class="col-md-4">
+            <?= $form->field($calendarEntryForm, 'number_of_events')->textInput(['placeholder' => 'Number of events', 'disabled' =>  true])->label(false); ?>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-6">
+            <?= $form->field($calendarEntryForm, 'is_public')->checkbox() ?>
+        </div>
+        <div class="col-md-6">
+            <?= $form->field($calendarEntryForm->entry, 'all_day')->checkbox(['data-action-change' => 'toggleDateTime']); ?>
+        </div>
+    </div>
 
     <?php Yii::$app->formatter->timeZone = $calendarEntryForm->timeZone ?>
 
@@ -86,3 +94,23 @@ use yii\jui\DatePicker;
 
     <?= $form->field($calendarEntryForm, 'topics')->widget(TopicPicker::class, ['contentContainer' => $contentContainer]); ?>
 </div>
+
+<?php
+$this->registerJs("
+
+if($('#calendarentryformcustom-to_be_continued').prop('checked') == true){
+  $('#calendarentryformcustom-week').prop('disabled', false);
+  $('#calendarentryformcustom-number_of_events').prop('disabled', false);
+}
+
+$(document).on('change','#calendarentryformcustom-to_be_continued', function() {
+  if($('#calendarentryformcustom-to_be_continued').prop('checked') == true){
+      $('#calendarentryformcustom-week').prop('disabled', false);
+      $('#calendarentryformcustom-number_of_events').prop('disabled', false);
+  } else{
+      $('#calendarentryformcustom-week').prop('disabled', 'disabled');
+      $('#calendarentryformcustom-number_of_events').prop('disabled', 'disabled');
+  }
+});
+
+", \yii\web\View::POS_READY);

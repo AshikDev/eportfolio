@@ -135,62 +135,62 @@ class EntrycustomController extends ContentContainerController
                 }
             }
 
-            if($calendarEntryForm->synchronize) {
-                if($this->contentContainer->community != '_0_') {
-
-                    $parentsFormat = trim($this->contentContainer->community, '_');
-                    $spaceParentsIds = explode('_', $parentsFormat);
-
-                    $spaceParents = Space::find()
-                        ->select('guid')
-                        ->where(['in', 'id', $spaceParentsIds])
-                        ->all();
-
-                    if(isset($spaceParents) && !empty($spaceParents)) {
-                        foreach ($spaceParents as $spaceParent) {
-
-                            $contentContainerParent = ContentContainer::find()->where(['guid' => $spaceParent->guid])->one();
-
-                            if(!empty($contentContainerParent)) {
-
-                                $container = $contentContainerParent->getPolymorphicRelation();
-
-                                $calendarEntryFormParent = new CalendarEntryFormCustom();
-                                $calendarEntryFormParent->createNew($container, $start, $end);
-                                $calendarEntryFormParent->load(Yii::$app->request->post());
-                                $calendarEntryFormParent->save();
-                            }
-
-                        }
-                    }
-
-                } else {
-
-                    $spaceChilds = Space::find()
-                        ->select('guid')
-                        ->filterWhere(['like', 'community', '%\_'. $this->contentContainer->id . '\_%', false])
-                        ->all();
-
-                    if(isset($spaceChilds) && !empty($spaceChilds)) {
-                        foreach ($spaceChilds as $spaceChild) {
-
-                            $contentContainerChild = ContentContainer::find()->where(['guid' => $spaceChild->guid])->one();
-
-                            if(!empty($contentContainerChild)) {
-
-                                $container = $contentContainerChild->getPolymorphicRelation();
-
-                                $calendarEntryFormChild = new CalendarEntryFormCustom();
-                                $calendarEntryFormChild->createNew($container, $start, $end);
-                                $calendarEntryFormChild->load(Yii::$app->request->post());
-                                $calendarEntryFormChild->save();
-                            }
-
-                        }
-                    }
-
-                }
-            }
+//            if($calendarEntryForm->synchronize) {
+//                if($this->contentContainer->community != '_0_') {
+//
+//                    $parentsFormat = trim($this->contentContainer->community, '_');
+//                    $spaceParentsIds = explode('_', $parentsFormat);
+//
+//                    $spaceParents = Space::find()
+//                        ->select('guid')
+//                        ->where(['in', 'id', $spaceParentsIds])
+//                        ->all();
+//
+//                    if(isset($spaceParents) && !empty($spaceParents)) {
+//                        foreach ($spaceParents as $spaceParent) {
+//
+//                            $contentContainerParent = ContentContainer::find()->where(['guid' => $spaceParent->guid])->one();
+//
+//                            if(!empty($contentContainerParent)) {
+//
+//                                $container = $contentContainerParent->getPolymorphicRelation();
+//
+//                                $calendarEntryFormParent = new CalendarEntryFormCustom();
+//                                $calendarEntryFormParent->createNew($container, $start, $end);
+//                                $calendarEntryFormParent->load(Yii::$app->request->post());
+//                                $calendarEntryFormParent->save();
+//                            }
+//
+//                        }
+//                    }
+//
+//                } else {
+//
+//                    $spaceChilds = Space::find()
+//                        ->select('guid')
+//                        ->filterWhere(['like', 'community', '%\_'. $this->contentContainer->id . '\_%', false])
+//                        ->all();
+//
+//                    if(isset($spaceChilds) && !empty($spaceChilds)) {
+//                        foreach ($spaceChilds as $spaceChild) {
+//
+//                            $contentContainerChild = ContentContainer::find()->where(['guid' => $spaceChild->guid])->one();
+//
+//                            if(!empty($contentContainerChild)) {
+//
+//                                $container = $contentContainerChild->getPolymorphicRelation();
+//
+//                                $calendarEntryFormChild = new CalendarEntryFormCustom();
+//                                $calendarEntryFormChild->createNew($container, $start, $end);
+//                                $calendarEntryFormChild->load(Yii::$app->request->post());
+//                                $calendarEntryFormChild->save();
+//                            }
+//
+//                        }
+//                    }
+//
+//                }
+//            }
 
             if(empty($cal)) {
                 return ModalClose::widget(['saved' => true]);

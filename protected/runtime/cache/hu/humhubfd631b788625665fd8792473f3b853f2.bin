@@ -1,4 +1,4 @@
-a:2:{i:0;s:1471:"
+a:2:{i:0;s:972:"
 <a href="/humhub_versions/eportfolio/index.php?r=activity%2Flink&id=482">
     <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="771">
         <div class="media">
@@ -8,12 +8,11 @@ a:2:{i:0;s:1471:"
                      src="/humhub_versions/eportfolio/static/img/default_user.jpg">
             
             <!-- Show space image, if you are outside from a space -->
-                                                <div class="img-space pull-left space-profile-acronym-7 space-acronym" style=" background-color: #026d05; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">E</div><img class="img-space pull-left space-profile-image-7 img-rounded profile-user-photo hidden" src="/humhub_versions/eportfolio/static/img/default_space.jpg" alt="e-Portfolio " style=" width: 20px; height: 20px">                
             
             <div class="media-body text-break">
 
                 <!-- Show content -->
-                <strong>roger norum</strong> left the space <strong>e-Portfolio</strong>                <br>
+                <strong>roger norum</strong> left this space.                <br>
 
                 <!-- show time -->
                 <span class="time"><span title="Sep 7, 2019 - 3:46 AM">Sep 7, 2019</span></span>            </div>

@@ -102,8 +102,30 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
             $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
             $this->andWhere(['IS', 'contentcontainer.pk', new \yii\db\Expression('NULL')]);
         } else {
-            $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
-            $this->andWhere(['contentcontainer.pk' => $container->id, 'contentcontainer.class' => $container->className()]);
+            if($container->community == '_0_') {
+                $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                $spaceChilds = Space::find()
+                    ->select('id')
+                    ->filterWhere(['like', 'community', '%\_'. $container->id . '\_%', false])
+                    ->column();
+                if(isset($spaceChilds) && !empty($spaceChilds)) {
+                    $this->andWhere(['in', 'contentcontainer.pk', $spaceChilds]);
+                    $this->andWhere(['content.visibility' => 1]);
+                }
+                $this->orWhere(['contentcontainer.pk' => $container->id]);
+                $this->andWhere(['contentcontainer.class' => $container->className()]);
+            } else {
+                $parentsFormat = trim($container->community, '_');
+                $spaceParentsIds = explode('_', $parentsFormat);
+                $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                if(isset($spaceParentsIds) && !empty($spaceParentsIds)) {
+                    $this->andWhere(['in', 'contentcontainer.pk', $spaceParentsIds]);
+                    $this->andWhere(['content.visibility' => 1]);
+                }
+                $this->orWhere(['contentcontainer.pk' => $container->id]);
+                $this->andWhere(['contentcontainer.class' => $container->className()]);
+            }
+
         }
 
         return $this;
@@ -184,9 +206,18 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
         }
 
         if (in_array(self::USER_RELATED_SCOPE_SPACES, $scopes)) {
+            $flagOnlyCommunity = false;
             if (max($scopes) > 1000) {
                 $trimmedHubs = [];
                 foreach ($scopes as $hub_id) {
+                    if($hub_id == 12345678901) {
+                        $flagOnlyCommunity = true;
+                        continue;
+                    }
+                    if ($hub_id == 123456789011) {
+                        $trimmedHubs[] = 0;
+                        break;
+                    }
                     if ($hub_id > 1000) {
                         $trimmedHubs[] = $hub_id - 1000;
                     }
@@ -197,9 +228,14 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
                         ->select("sm.id")
                         ->from('space_membership')
                         ->leftJoin('space sm', 'sm.id=space_membership.space_id')
-                        ->where('sm.community=:community AND space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
+                        ->where('space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
+                    if($flagOnlyCommunity) {
+                        $spaceMemberships->andWhere('sm.community=:community');
+                    }
                     $conditions[] = 'contentcontainer.pk IN (' . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0] . ') AND contentcontainer.class = :spaceClass AND space.id IN (' . $trimmedHubsString . ')';
-                    $params[':community'] = '_0_';
+                    if($flagOnlyCommunity) {
+                        $params[':community'] = '_0_';
+                    }
                     $params[':userId'] = $user->id;
                     $params[':spaceClass'] = Space::class;
                 }

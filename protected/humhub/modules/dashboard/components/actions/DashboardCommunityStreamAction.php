@@ -120,14 +120,15 @@ class DashboardCommunityStreamAction extends ActivityStreamAction
         }
 
         // Glue together also with current users wall
-        $wallIdsSql = (new Query())
-            ->select('cc.id')
-            ->from('contentcontainer cc')
-            ->where('cc.pk=' . $this->user->id . ' AND cc.class=:userClass');
-        $union .= " UNION " . Yii::$app->db->getQueryBuilder()->build($wallIdsSql)[0];
+//        $wallIdsSql = (new Query())
+//            ->select('cc.id')
+//            ->from('contentcontainer cc')
+//            ->where('cc.pk=' . $this->user->id . ' AND cc.class=:userClass');
+//        $union .= " UNION " . Yii::$app->db->getQueryBuilder()->build($wallIdsSql)[0];
 
         // Manual Union (https://github.com/yiisoft/yii2/issues/7992)
-        $this->activeQuery->andWhere('contentcontainer.id IN (' . $union . ') OR contentcontainer.id IS NULL', [':spaceClass' => Space::class, ':userClass' => User::class]);
+        // $this->activeQuery->andWhere('contentcontainer.id IN (' . $union . ') OR contentcontainer.id IS NULL', [':spaceClass' => Space::class, ':userClass' => User::class]);
+        $this->activeQuery->andWhere('contentcontainer.id IN (' . $union . ') OR contentcontainer.id IS NULL', [':spaceClass' => Space::class]);
 
         /**
          * Begin visibility checks regarding the content container

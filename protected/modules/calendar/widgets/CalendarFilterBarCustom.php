@@ -47,7 +47,7 @@ class CalendarFilterBarCustom extends Widget
                 ->select("sm.id as id, sm.name as name, sm.community as community")
                 ->from('space_membership')
                 ->leftJoin('space sm', 'sm.id=space_membership.space_id')
-                ->andWhere('sm.community="_0_" AND space_membership.user_id= '. $user->id .' AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER)
+                ->andWhere('space_membership.user_id= '. $user->id .' AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER)
                 ->all();
         }
 

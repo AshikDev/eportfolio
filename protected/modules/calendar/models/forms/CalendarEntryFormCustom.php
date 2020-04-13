@@ -36,8 +36,6 @@ class CalendarEntryFormCustom extends Model
      */
     public $is_public;
 
-    public $synchronize;
-
     public $to_be_continued;
 
     public $week;
@@ -129,7 +127,7 @@ class CalendarEntryFormCustom extends Model
         return [
             [['timeZone'], 'in', 'range' => DateTimeZone::listIdentifiers()],
             [['topics', 'week', 'number_of_events'], 'safe'],
-            [['is_public', 'synchronize', 'to_be_continued', 'type_id', 'sendUpdateNotification', 'forceJoin'], 'integer'],
+            [['is_public', 'to_be_continued', 'type_id', 'sendUpdateNotification', 'forceJoin'], 'integer'],
             [['start_time', 'end_time'], 'date', 'type' => 'time', 'format' => $this->getTimeFormat()],
             [['start_date'], DbDateValidator::class, 'format' => Yii::$app->params['formatter']['defaultDateFormat'], 'timeAttribute' => 'start_time', 'timeZone' => $this->timeZone],
             [['end_date'], DbDateValidator::class, 'format' => Yii::$app->params['formatter']['defaultDateFormat'], 'timeAttribute' => 'end_time', 'timeZone' => $this->timeZone],
@@ -206,7 +204,6 @@ class CalendarEntryFormCustom extends Model
             'end_time' => Yii::t('CalendarModule.base', 'End Time'),
             'timeZone' => Yii::t('CalendarModule.base', 'Time Zone'),
             'is_public' => Yii::t('CalendarModule.base', 'Public'),
-            'synchronize' => Yii::t('CalendarModule.base', 'Synchonize'),
             'to_be_continued' => Yii::t('CalendarModule.base', 'Recursive Event'),
             'week' => Yii::t('CalendarModule.base', 'Interval'),
             'sendUpdateNotification' => Yii::t('CalendarModule.base', 'Send update notification'),

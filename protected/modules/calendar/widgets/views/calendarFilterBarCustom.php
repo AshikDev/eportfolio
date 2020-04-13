@@ -37,6 +37,16 @@ use kartik\select2\Select2;
                             </label>
                         </div>
                     </div>
+                    <div style="display:inline-block; float:left;margin-right:10px;">
+                        <div class="checkbox">
+                            <label class="calendar_my_profile">
+                                <input id="only_community" type="checkbox" name="selector" class="selectorCheckbox"
+                                       value="12345678901"
+                                       <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                <?= Yii::t('CalendarModule.views_global_index', 'Only Community'); ?>
+                            </label>
+                        </div>
+                    </div>
 
                     <?php if (!Yii::$app->getModule('user')->disableFollow) : ?>
                         <div style="display:inline-block;">
@@ -89,41 +99,70 @@ use kartik\select2\Select2;
             </div>
         </div>
         <?php
-        if ( !$spaceId ) :
-        ?>
-        <div class="col-md-6" style="text-align: right;">
-            <ul style="list-style: none;">
-                <li class="dropdown">
-                    <button id="hubs" class="btn btn-secondary dropdown-toggle disabled" type="button"
-                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Please select hubs <b class="caret"></b>
-                    </button>
-                    <ul class="dropdown-menu custom_menu" style="text-decoration: none">
-                        <li style="padding: 10px;">
-                            <div class="checkbox">
-                                <label class="calendar_my_profile">
-                                    <input type="checkbox" name="hubs"  class="selectorCheckbox" id="all_hubs" value="1234567890" checked="checked" disabled="disabled" /> Select All
-                                </label>
-                            </div>
-                        </li>
-                        <?php
-                        foreach ($spaceModelAll as $space) :
-                            ?>
+        if (!$spaceId) :
+            ?>
+            <div class="col-md-6" style="text-align: right;">
+                <ul style="list-style: none;">
+                    <li class="dropdown">
+                        <button id="hubs" class="btn btn-secondary dropdown-toggle disabled" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                            Please select hubs <b class="caret"></b>
+                        </button>
+                        <ul class="dropdown-menu custom_menu" style="text-decoration: none">
                             <li style="padding: 10px;">
                                 <div class="checkbox">
                                     <label class="calendar_my_profile">
-                                        <input type="checkbox" name="hubs" class="selectorCheckbox each_hub"
-                                               value="<?= $space['id'] + 1000; ?>" checked="checked" /> <?= $space['name']; ?>
+                                        <input type="checkbox" name="hubs" class="selectorCheckbox" id="all_hubs"
+                                               value="1234567890" checked="checked" disabled="disabled" /> Select All
                                     </label>
                                 </div>
                             </li>
-                        <?php
-                        endforeach;
-                        ?>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+                            <li style="padding: 10px;">
+                                <div class="checkbox">
+                                    <label class="calendar_my_profile">
+                                        <input type="checkbox" name="hubs" class="selectorCheckbox" id="no_hubs"
+                                               value="123456789011" /> Deselect All
+                                    </label>
+                                </div>
+                            </li>
+                            <?php
+                            foreach ($spaceModelAll as $space) :
+                                if ($space['community'] == '_0_') :
+                                    ?>
+                                    <li class="each_community" style="padding: 5px; font-size: 16px;">
+                                        <div class="checkbox">
+                                            <label class="calendar_my_profile" style="font-weight: bold; ">
+                                                <input type="checkbox" name="hubs" class="selectorCheckbox each_hub"
+                                                       value="<?= $space['id'] + 1000; ?>"
+                                                       checked="checked"/> <?= $space['name']; ?>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <?php
+                                    foreach ($spaceModelAll as $s) :
+                                        if (strpos($s['community'], '_' . $space['id'] . '_') !== false) :
+                                            ?>
+                                            <li class="each_space" style="padding-left: 40px;">
+                                                <div class="checkbox">
+                                                    <label class="calendar_my_profile">
+                                                        <input type="checkbox" name="hubs"
+                                                               class="selectorCheckbox each_hub"
+                                                               value="<?= $s['id'] + 1000; ?>"
+                                                               checked="checked"/> <?= $s['name']; ?>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        <?php
+                                        endif;
+                                    endforeach;
+                                endif;
+                            endforeach;
+                            ?>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         <?php endif ?>
         <?php endif ?>
     </div>
@@ -140,29 +179,65 @@ if (!$spaceId) {
 
     if($('#my_spaces').prop('checked') == true){
       $('#hubs').removeClass( 'disabled' );
+      $('#only_community').prop('disabled', false);
     } else {
         $('#hubs').addClass( 'disabled' );
+        $('#only_community').prop('disabled', true);
     }
     
     $(document).on('change','#my_spaces', function() {
       if($('#my_spaces').prop('checked') == true){
           $('#hubs').removeClass( 'disabled' );
+          $('#only_community').prop('disabled', false);
       } else {
           $('#hubs').addClass( 'disabled' );
-      }        
+          $('#only_community').prop('checked', false);
+          $('#only_community').prop('disabled', true);
+      }
+
+      if ($('#only_community').prop('checked') == true){
+          $('.each_space').hide();
+      } else {
+          $('.each_space').show();
+      }         
     });
     
     $('#all_hubs').change(function(){ 
+        $('#no_hubs').prop('checked', false);
         $('.each_hub').prop('checked', $(this).prop('checked'));
     });
     
-    $('.each_hub').change(function(){ 
+    $('#no_hubs').change(function(){ 
+      if ($('#no_hubs').prop('checked') == true){
+          $('.each_hub').prop('checked', false);
+          $('#all_hubs').prop('checked', false);
+      }
+    });
+    
+    if ($('#only_community').prop('checked') == true){
+        $('.each_space').hide();
+    } else {
+        $('.each_space').show();
+    }  
+    $('#only_community').change(function(){ 
+      if ($('#only_community').prop('checked') == true){
+          $('.each_space').hide();
+      } else {
+          $('.each_space').show();
+      }  
+    });
+    
+    $('.each_hub').change(function(){                
         if(false == $(this).prop('checked')){
             $('#all_hubs').prop('checked', false);
         }
     
         if ($('.each_hub:checked').length == $('.each_hub').length ){
             $('#all_hubs').prop('checked', true);
+        }
+        
+        if ($('#no_hubs').prop('checked') == true){
+           $('#no_hubs').trigger('click');
         }
     });
 

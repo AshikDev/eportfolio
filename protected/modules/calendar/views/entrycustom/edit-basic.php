@@ -55,13 +55,10 @@ use yii\jui\DatePicker;
     </div>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <?= $form->field($calendarEntryForm, 'is_public')->checkbox() ?>
         </div>
-        <div class="col-md-4">
-            <?= $form->field($calendarEntryForm, 'synchronize')->checkbox() ?>
-        </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <?= $form->field($calendarEntryForm->entry, 'all_day')->checkbox(['data-action-change' => 'toggleDateTime']); ?>
         </div>
     </div>
