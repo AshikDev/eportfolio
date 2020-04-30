@@ -102,30 +102,34 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
             $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
             $this->andWhere(['IS', 'contentcontainer.pk', new \yii\db\Expression('NULL')]);
         } else {
-            if($container->community == '_0_') {
-                $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
-                $spaceChilds = Space::find()
-                    ->select('id')
-                    ->filterWhere(['like', 'community', '%\_'. $container->id . '\_%', false])
-                    ->column();
-                if(isset($spaceChilds) && !empty($spaceChilds)) {
-                    $this->andWhere(['in', 'contentcontainer.pk', $spaceChilds]);
-                    $this->andWhere(['content.visibility' => 1]);
+            if(isset($container->community)) {
+                if($container->community == '_0_') {
+                    $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                    $spaceChilds = Space::find()
+                        ->select('id')
+                        ->filterWhere(['like', 'community', '%\_'. $container->id . '\_%', false])
+                        ->column();
+                    if(isset($spaceChilds) && !empty($spaceChilds)) {
+                        $this->andWhere(['in', 'contentcontainer.pk', $spaceChilds]);
+                        $this->andWhere(['content.visibility' => 1]);
+                    }
+                    $this->orWhere(['contentcontainer.pk' => $container->id]);
+                    $this->andWhere(['contentcontainer.class' => $container->className()]);
+                } else {
+                    $parentsFormat = trim($container->community, '_');
+                    $spaceParentsIds = explode('_', $parentsFormat);
+                    $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                    if(isset($spaceParentsIds) && !empty($spaceParentsIds)) {
+                        $this->andWhere(['in', 'contentcontainer.pk', $spaceParentsIds]);
+                        $this->andWhere(['content.visibility' => 1]);
+                    }
+                    $this->orWhere(['contentcontainer.pk' => $container->id]);
+                    $this->andWhere(['contentcontainer.class' => $container->className()]);
                 }
-                $this->orWhere(['contentcontainer.pk' => $container->id]);
-                $this->andWhere(['contentcontainer.class' => $container->className()]);
             } else {
-                $parentsFormat = trim($container->community, '_');
-                $spaceParentsIds = explode('_', $parentsFormat);
                 $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
-                if(isset($spaceParentsIds) && !empty($spaceParentsIds)) {
-                    $this->andWhere(['in', 'contentcontainer.pk', $spaceParentsIds]);
-                    $this->andWhere(['content.visibility' => 1]);
-                }
-                $this->orWhere(['contentcontainer.pk' => $container->id]);
-                $this->andWhere(['contentcontainer.class' => $container->className()]);
+                $this->andWhere(['contentcontainer.pk' => $container->id, 'contentcontainer.class' => $container->className()]);
             }
-
         }
 
         return $this;

@@ -34,7 +34,7 @@ class CalendarFilterBarCustom extends Widget
         }
         $user = Yii::$app->user->getIdentity();
 
-        if ( $this->community != '' ) {
+        if ( $this->community != '' ) { // if not a community
             $spaceModelAll = (new \yii\db\Query())
                 ->select("sm.id as id, sm.name as name, sm.community as community")
                 ->from('space_membership')
@@ -42,7 +42,7 @@ class CalendarFilterBarCustom extends Widget
                 ->filterWhere(['like', 'sm.community', '%\_'. $this->space_id . '\_%', false])
                 ->andWhere('space_membership.user_id= '. $user->id .' AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER)
                 ->all();
-        } else {
+        } else { // if it is a community
             $spaceModelAll = (new \yii\db\Query())
                 ->select("sm.id as id, sm.name as name, sm.community as community")
                 ->from('space_membership')

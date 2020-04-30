@@ -3,109 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="4dfb2066-717d-46c8-9626-a4e09615f934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/CONTRIBUTING.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.print.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/fullcalendar.print.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/gcal.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/gcal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale-all.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale-all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-dz.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-dz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-kw.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-kw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-ly.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-ly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-ma.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-ma.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-sa.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-sa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-tn.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar-tn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/de-at.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/de-at.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-ie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-nz.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/en-nz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/es-do.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/es-do.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/es-us.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/es-us.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fr-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fr-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fr-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/kk.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/kk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/lb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ms-my.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ms-my.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nl-be.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nl-be.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nn.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/nn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sr-cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sr-cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/locale/zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/7f879f78/js/fullcalendar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/activity.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/content.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/dynamic.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/dynamic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/dashboard.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/dashboard/components/actions/DashboardCommunityStreamAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/dashboard/components/actions/DashboardCommunityStreamAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/humhub_freichat.v1.0.0.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/space.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/stream.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/controllers/EntryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/controllers/EntryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/controllers/EntrycustomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/controllers/EntrycustomController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/models/forms/CalendarEntryFormCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/models/forms/CalendarEntryFormCustom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/views/entry/edit-basic.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/views/entry/edit-basic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/views/entrycustom/edit-basic.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/views/entrycustom/edit-basic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/modules/calendar/widgets/CalendarFilterBarCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/widgets/CalendarFilterBarCustom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/modules/calendar/widgets/views/calendarFilterBarCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/widgets/views/calendarFilterBarCustom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub1e2808ee2174c2b68cde9de7152583e2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub1e2808ee2174c2b68cde9de7152583e2.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub42634fa8ec5bd765d71fde0c798aa05d.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub42634fa8ec5bd765d71fde0c798aa05d.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubd6be09d38d66c3e8bf5d3dbdc1ffb77b.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubd6be09d38d66c3e8bf5d3dbdc1ffb77b.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubfd631b788625665fd8792473f3b853f2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubfd631b788625665fd8792473f3b853f2.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/debug/index.data" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/debug/index.data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/logs/app.log" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/protected/modules/calendar/views/entry" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -149,6 +63,18 @@
       <recent name="$PROJECT_DIR$/protected/modules/calendar/views" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.display.php (1)">
     <configuration name="display.php (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost/humhub_versions/clean/index.php?r=dashboard%2Fdashboard/humhub_versions/eportfolio/protected/humhub/modules/admin/views/welcome/display.php">
       <method v="2" />
@@ -162,18 +88,6 @@
         <item itemvalue="JavaScript Debug.display.php" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -256,7 +170,11 @@
       <workItem from="1585911684576" duration="606000" />
       <workItem from="1586023949779" duration="479000" />
       <workItem from="1586717361564" duration="6011000" />
-      <workItem from="1586794621075" duration="12629000" />
+      <workItem from="1586794621075" duration="13919000" />
+      <workItem from="1587070525992" duration="488000" />
+      <workItem from="1587944151037" duration="4542000" />
+      <workItem from="1587980470507" duration="1536000" />
+      <workItem from="1588241268804" duration="1091000" />
     </task>
     <servers />
   </component>
@@ -301,14 +219,10 @@
       <screen x="65" y="24" width="1301" height="744" />
     </state>
     <state x="467" y="45" key="RollbackChangesDialog/65.24.1301.744@65.24.1301.744" timestamp="1583459559449" />
-    <state x="209" y="24" key="SettingsEditor" timestamp="1578417565790">
+    <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1587072225248">
       <screen x="65" y="24" width="1301" height="744" />
     </state>
-    <state x="209" y="24" key="SettingsEditor/65.24.1301.744@65.24.1301.744" timestamp="1578417565790" />
-    <state x="376" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1586796232671">
-      <screen x="65" y="24" width="1301" height="744" />
-    </state>
-    <state x="376" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1586796232671" />
+    <state x="376" y="211" key="com.intellij.ide.util.TipDialog/65.24.1301.744@65.24.1301.744" timestamp="1587072225248" />
     <state x="389" y="89" width="950" height="646" key="find.popup" timestamp="1583534512878">
       <screen x="65" y="24" width="1301" height="744" />
     </state>

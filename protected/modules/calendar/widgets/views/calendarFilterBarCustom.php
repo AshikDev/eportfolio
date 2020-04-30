@@ -10,7 +10,7 @@ use kartik\select2\Select2;
 
 <?php FadeIn::begin() ?>
     <div class="row calendar-options">
-        <div class="col-md-6">
+        <div class="col-md-8">
             <div id="calendar-overview-loader" style="position: absolute;right: 10px;top: 60px;"></div>
             <?= Button::defaultType()->link($configUrl)->right()->icon('fa-cog')->visible($canConfigure) ?>
             <?php if ($showSelectors) : ?>
@@ -101,7 +101,7 @@ use kartik\select2\Select2;
         <?php
         if (!$spaceId) :
             ?>
-            <div class="col-md-6" style="text-align: right;">
+            <div class="col-md-4" style="text-align: right;">
                 <ul style="list-style: none;">
                     <li class="dropdown">
                         <button id="hubs" class="btn btn-secondary dropdown-toggle disabled" type="button"

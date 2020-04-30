@@ -43,7 +43,7 @@
         'installer_database' => 'eportfolio',
       ),
     ),
-    'config_created_at' => 1563269599,
+    'config_created_at' => 1588073060,
     'horImageScrollOnMobile' => '1',
     'databaseInstalled' => true,
     'installed' => true,
