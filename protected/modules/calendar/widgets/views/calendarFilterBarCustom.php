@@ -1,6 +1,6 @@
 <?php
 
-use humhub\modules\content\components\ActiveQueryContent;
+use humhub\modules\content\components\ActiveQueryContentCustom;
 use humhub\modules\calendar\models\CalendarEntry;
 use humhub\widgets\Button;
 use humhub\widgets\FadeIn;
@@ -23,16 +23,16 @@ use kartik\select2\Select2;
                         <div class="checkbox">
                             <label class="calendar_my_profile">
                                 <input type="checkbox" name="selector" class="selectorCheckbox"
-                                       value="<?= ActiveQueryContent::USER_RELATED_SCOPE_OWN_PROFILE; ?>"
-                                       <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_OWN_PROFILE, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                       value="<?= ActiveQueryContentCustom::USER_RELATED_SCOPE_OWN_PROFILE; ?>"
+                                       <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_OWN_PROFILE, $selectors)): ?>checked="checked"<?php endif; ?>>
                                 <?= Yii::t('CalendarModule.views_global_index', 'My profile'); ?>
                             </label>
                         </div>
                         <div class="checkbox">
                             <label class="calendar_my_spaces">
                                 <input id="my_spaces" type="checkbox" name="selector" class="selectorCheckbox"
-                                       value="<?= ActiveQueryContent::USER_RELATED_SCOPE_SPACES; ?>"
-                                       <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                       value="<?= ActiveQueryContentCustom::USER_RELATED_SCOPE_SPACES; ?>"
+                                       <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
                                 <?= Yii::t('CalendarModule.views_global_index', 'My Hubs'); ?>
                             </label>
                         </div>
@@ -42,7 +42,7 @@ use kartik\select2\Select2;
                             <label class="calendar_my_profile">
                                 <input id="only_community" type="checkbox" name="selector" class="selectorCheckbox"
                                        value="12345678901"
-                                       <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                       <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
                                 <?= Yii::t('CalendarModule.views_global_index', 'Only Community'); ?>
                             </label>
                         </div>
@@ -53,16 +53,16 @@ use kartik\select2\Select2;
                             <div class="checkbox">
                                 <label class="calendar_followed_spaces">
                                     <input type="checkbox" name="selector" class="selectorCheckbox"
-                                           value="<?= ActiveQueryContent::USER_RELATED_SCOPE_FOLLOWED_SPACES; ?>"
-                                           <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_FOLLOWED_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                           value="<?= ActiveQueryContentCustom::USER_RELATED_SCOPE_FOLLOWED_SPACES; ?>"
+                                           <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_FOLLOWED_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
                                     <?= Yii::t('CalendarModule.views_global_index', 'Followed spaces'); ?>
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label class="calendar_followed_users">
                                     <input type="checkbox" name="selector" class="selectorCheckbox"
-                                           value="<?= ActiveQueryContent::USER_RELATED_SCOPE_FOLLOWED_USERS; ?>"
-                                           <?php if (in_array(ActiveQueryContent::USER_RELATED_SCOPE_FOLLOWED_USERS, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                           value="<?= ActiveQueryContentCustom::USER_RELATED_SCOPE_FOLLOWED_USERS; ?>"
+                                           <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_FOLLOWED_USERS, $selectors)): ?>checked="checked"<?php endif; ?>>
                                     <?= Yii::t('CalendarModule.views_global_index', 'Followed users'); ?>
                                 </label>
                             </div>

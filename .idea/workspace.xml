@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4dfb2066-717d-46c8-9626-a4e09615f934" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/dynamic.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/dynamic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/config/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/modules/calendar/widgets/CalendarFilterBarCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/widgets/CalendarFilterBarCustom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContentCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/humhub/modules/content/components/ActiveQueryContentCustom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/modules/calendar/widgets/views/calendarFilterBarCustom.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/modules/calendar/widgets/views/calendarFilterBarCustom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub1e2808ee2174c2b68cde9de7152583e2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub1e2808ee2174c2b68cde9de7152583e2.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub42634fa8ec5bd765d71fde0c798aa05d.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhub42634fa8ec5bd765d71fde0c798aa05d.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubd6be09d38d66c3e8bf5d3dbdc1ffb77b.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubd6be09d38d66c3e8bf5d3dbdc1ffb77b.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubfd631b788625665fd8792473f3b853f2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/cache/hu/humhubfd631b788625665fd8792473f3b853f2.bin" afterDir="false" />
@@ -175,6 +169,10 @@
       <workItem from="1587944151037" duration="4542000" />
       <workItem from="1587980470507" duration="1536000" />
       <workItem from="1588241268804" duration="1091000" />
+      <workItem from="1588245774357" duration="1000000" />
+      <workItem from="1588508490818" duration="8717000" />
+      <workItem from="1588540044849" duration="757000" />
+      <workItem from="1588604756948" duration="537000" />
     </task>
     <servers />
   </component>

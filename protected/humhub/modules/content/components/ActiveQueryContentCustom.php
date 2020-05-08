@@ -16,7 +16,7 @@ use Yii;
 use yii\db\Expression;
 
 /**
- * ActiveQueryContentCustom is an enhanced ActiveQuery with additional selectors for especially content.
+ * ActiveQueryContent is an enhanced ActiveQuery with additional selectors for especially content.
  *
  * @inheritdoc
  *
@@ -27,7 +27,7 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
 
     /**
      * Own content scope for userRelated
-     * @see ActiveQueryContentCustom::userRelated
+     * @see ActiveQueryContent::userRelated
      */
     const USER_RELATED_SCOPE_OWN = 1;
     const USER_RELATED_SCOPE_SPACES = 2;
@@ -39,7 +39,7 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
      * Only returns user readable records
      *
      * @param \humhub\modules\user\models\User $user
-     * @return \humhub\modules\content\components\ActiveQueryContentCustom
+     * @return \humhub\modules\content\components\ActiveQueryContent
      * @throws \Throwable
      */
     public function readable($user = null)
@@ -93,7 +93,7 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
      * Limits the returned records to the given ContentContainer.
      *
      * @param ContentContainerActiveRecord $container |null or null for global content
-     * @return \humhub\modules\content\components\ActiveQueryContentCustom
+     * @return \humhub\modules\content\components\ActiveQueryContent
      * @throws \yii\base\Exception
      */
     public function contentContainer($container)
@@ -102,8 +102,34 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
             $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
             $this->andWhere(['IS', 'contentcontainer.pk', new \yii\db\Expression('NULL')]);
         } else {
-            $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
-            $this->andWhere(['contentcontainer.pk' => $container->id, 'contentcontainer.class' => $container->className()]);
+            if(isset($container->community) && (isset(Yii::$app->controller->module->id) && Yii::$app->controller->module->id == 'calendar')) {
+                if($container->community == '_0_') {
+                    $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                    $spaceChilds = Space::find()
+                        ->select('id')
+                        ->filterWhere(['like', 'community', '%\_'. $container->id . '\_%', false])
+                        ->column();
+                    if(isset($spaceChilds) && !empty($spaceChilds)) {
+                        $this->andWhere(['in', 'contentcontainer.pk', $spaceChilds]);
+                        $this->andWhere(['content.visibility' => 1]);
+                    }
+                    $this->orWhere(['contentcontainer.pk' => $container->id]);
+                    $this->andWhere(['contentcontainer.class' => $container->className()]);
+                } else {
+                    $parentsFormat = trim($container->community, '_');
+                    $spaceParentsIds = explode('_', $parentsFormat);
+                    $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                    if(isset($spaceParentsIds) && !empty($spaceParentsIds)) {
+                        $this->andWhere(['in', 'contentcontainer.pk', $spaceParentsIds]);
+                        $this->andWhere(['content.visibility' => 1]);
+                    }
+                    $this->orWhere(['contentcontainer.pk' => $container->id]);
+                    $this->andWhere(['contentcontainer.class' => $container->className()]);
+                }
+            } else {
+                $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
+                $this->andWhere(['contentcontainer.pk' => $container->id, 'contentcontainer.class' => $container->className()]);
+            }
         }
 
         return $this;
@@ -114,7 +140,7 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
      *
      * @param $contentTags ContentTag[]|ContentTag
      * @param $mode string
-     * @return ActiveQueryContentCustom
+     * @return ActiveQueryContent
      */
     public function contentTag($contentTags, $mode = 'AND')
     {
@@ -160,11 +186,11 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
 
     /**
      * Finds user related content.
-     * All available scopes: ActiveQueryContentCustom::USER_RELATED_SCOPE_*
+     * All available scopes: ActiveQueryContent::USER_RELATED_SCOPE_*
      *
      * @param array $scopes
      * @param User $user
-     * @return \humhub\modules\content\components\ActiveQueryContentCustom
+     * @return \humhub\modules\content\components\ActiveQueryContent
      */
     public function userRelated($scopes = [], $user = null)
     {
@@ -184,9 +210,18 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
         }
 
         if (in_array(self::USER_RELATED_SCOPE_SPACES, $scopes)) {
+            $flagOnlyCommunity = false;
             if (max($scopes) > 1000) {
                 $trimmedHubs = [];
                 foreach ($scopes as $hub_id) {
+                    if($hub_id == 12345678901) {
+                        $flagOnlyCommunity = true;
+                        continue;
+                    }
+                    if ($hub_id == 123456789011) {
+                        $trimmedHubs[] = 0;
+                        break;
+                    }
                     if ($hub_id > 1000) {
                         $trimmedHubs[] = $hub_id - 1000;
                     }
@@ -198,18 +233,23 @@ class ActiveQueryContentCustom extends \yii\db\ActiveQuery
                         ->from('space_membership')
                         ->leftJoin('space sm', 'sm.id=space_membership.space_id')
                         ->where('space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
+                    if($flagOnlyCommunity) {
+                        $spaceMemberships->andWhere('sm.community=:community');
+                    }
                     $conditions[] = 'contentcontainer.pk IN (' . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0] . ') AND contentcontainer.class = :spaceClass AND space.id IN (' . $trimmedHubsString . ')';
+                    if($flagOnlyCommunity) {
+                        $params[':community'] = '_0_';
+                    }
                     $params[':userId'] = $user->id;
                     $params[':spaceClass'] = Space::class;
                 }
             } else {
                 $spaceMemberships = (new \yii\db\Query())
-                    ->select("sm.id")
-                    ->from('space_membership')
-                    ->leftJoin('space sm', 'sm.id=space_membership.space_id')
-                    ->where('space_membership.user_id=:userId AND space_membership.status=' . \humhub\modules\space\models\Membership::STATUS_MEMBER);
+                    ->select('sm.id')
+                    ->from('space sm')
+                    ->where('sm.id=:space_id');
                 $conditions[] = 'contentcontainer.pk IN (' . Yii::$app->db->getQueryBuilder()->build($spaceMemberships)[0] . ') AND contentcontainer.class = :spaceClass';
-                $params[':userId'] = $user->id;
+                $params[':space_id'] = '0';
                 $params[':spaceClass'] = Space::class;
             }
         }

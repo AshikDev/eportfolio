@@ -28017,3 +28017,1022 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1588071577.588
     'REQUEST_TIME' => 1588071577
 ]
+2020-05-03 16:16:59 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\ErrorException:1] yii\base\ErrorException: Class 'humhub\modules\calendar\interfaces\Component' not found in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/interfaces/CalendarServiceCustom.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2020-05-03 16:16:59 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/community/index'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7SW3ECrAgzw@VDGeC1-gAAAAI'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=cfiles%2Fbrowse&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '43296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588515419.605
+    'REQUEST_TIME' => 1588515419
+]
+2020-05-03 16:17:00 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\ErrorException:1] yii\base\ErrorException: Class 'humhub\modules\calendar\interfaces\Component' not found in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/interfaces/CalendarServiceCustom.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2020-05-03 16:17:00 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/community/index'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7SXPbAasmCovKypJGLrAAAAAM'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '43298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588515420.711
+    'REQUEST_TIME' => 1588515420
+]
+2020-05-03 16:27:28 [::1][13][83081adaa057996d22fb1c239bb48a59][error][ParseError] ParseError: syntax error, unexpected 'ascf' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/interfaces/CalendarServiceCustom.php:40
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('humhub\\modules\\...')
+#1 [internal function]: spl_autoload_call('humhub\\modules\\...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('humhub\\modules\\...')
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(745): yii\di\ServiceLocator->get('humhub\\modules\\...', false)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/CommunityController.php(39): yii\base\Module->get('humhub\\modules\\...')
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\CommunityController->init()
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#11 [internal function]: yii\base\Controller->__construct('community', Object(humhub\modules\calendar\Module), Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#16 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('community')
+#17 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('index')
+#18 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('community/index')
+#19 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/commun...', Array)
+#20 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#21 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#22 {main}
+2020-05-03 16:27:28 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/community/index'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7U0P7MAPOLJnAPmwZTYwAAAAQ'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=cfiles%2Fbrowse&cguid=c8f6370a-d74a-4ca2-8b6d-e6488d297f49'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '43458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588516048.734
+    'REQUEST_TIME' => 1588516048
+]
+2020-05-03 16:27:30 [::1][13][83081adaa057996d22fb1c239bb48a59][error][ParseError] ParseError: syntax error, unexpected 'ascf' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/interfaces/CalendarServiceCustom.php:40
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('humhub\\modules\\...')
+#1 [internal function]: spl_autoload_call('humhub\\modules\\...')
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(428): ReflectionClass->__construct('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('humhub\\modules\\...')
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(745): yii\di\ServiceLocator->get('humhub\\modules\\...', false)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/CommunityController.php(39): yii\base\Module->get('humhub\\modules\\...')
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\CommunityController->init()
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#11 [internal function]: yii\base\Controller->__construct('community', Object(humhub\modules\calendar\Module), Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#16 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('community')
+#17 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('index')
+#18 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('community/index')
+#19 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/commun...', Array)
+#20 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#21 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#22 {main}
+2020-05-03 16:27:30 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/community/index'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7U0mFCBUaWLnvTp-tBigAAAAg'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '43464'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => 'r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588516050.313
+    'REQUEST_TIME' => 1588516050
+]
+2020-05-03 16:38:38 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: humhub\modules\calendar\interfaces\CalendarServiceCustom in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('humhub\\modules\\...', true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(747): yii\base\Module->get('humhub\\modules\\...', true)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/ViewController.php(38): yii\base\Module->get('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\ViewController->init()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#5 [internal function]: yii\base\Controller->__construct('view', Object(humhub\modules\calendar\Module), Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('view')
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('load-ajax')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('view/load-ajax')
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/view/l...', Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#16 {main}
+2020-05-03 16:38:38 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/view/load-ajax'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'start' => '2020-04-26'
+    'end' => '2020-06-07'
+    'timezone' => 'Europe/Berlin'
+    '_' => '1588516716652'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7XbtdSc5rLd73EhWycwQAAAAA'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'l4txxXMrinleBQVSfWgiLsz7QxpzIxJAHWz4VAsrehHW4ESWBl-yERlHdSYKA0VZgLhyTjxCYi9JXZkAPl8uZg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '44998'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588516716652'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588516716652'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588516718.176
+    'REQUEST_TIME' => 1588516718
+]
+2020-05-03 16:39:36 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: humhub\modules\calendar\interfaces\CalendarServiceCustom in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('humhub\\modules\\...', true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(747): yii\base\Module->get('humhub\\modules\\...', true)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/ViewController.php(38): yii\base\Module->get('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\ViewController->init()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#5 [internal function]: yii\base\Controller->__construct('view', Object(humhub\modules\calendar\Module), Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('view')
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('load-ajax')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('view/load-ajax')
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/view/l...', Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#16 {main}
+2020-05-03 16:39:36 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/view/load-ajax'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'start' => '2020-04-26'
+    'end' => '2020-06-07'
+    'timezone' => 'Europe/Berlin'
+    '_' => '1588516775662'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7XqHECrAgzw@VDGeC2DwAAAAI'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'XsabzfOj8hTKpRWcHX2OEHjObbSR5nQTWkn_qjUFKsIfra6ehtfKfI3nZehqFulnNI1c4N6HBHwOeJ7-AHF-tQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '45038'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588516775662'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588516775662'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588516776.469
+    'REQUEST_TIME' => 1588516776
+]
+2020-05-03 16:44:40 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: humhub\modules\calendar\interfaces\CalendarServiceCustom in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('humhub\\modules\\...', true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(747): yii\base\Module->get('humhub\\modules\\...', true)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/ViewController.php(38): yii\base\Module->get('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\ViewController->init()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#5 [internal function]: yii\base\Controller->__construct('view', Object(humhub\modules\calendar\Module), Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('view')
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('load-ajax')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('view/load-ajax')
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/view/l...', Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#16 {main}
+2020-05-03 16:44:40 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/view/load-ajax'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'start' => '2020-04-26'
+    'end' => '2020-06-07'
+    'timezone' => 'Europe/Berlin'
+    '_' => '1588517079208'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7Y2GFCBUaWLnvTp-tBnQAAAAg'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'Btikk_njifftBQBVMKqqRrDa6KhsAleGgUEzss9W5p5Hs5HAjJexn6pHcCFHwc0x_JnZ_CNjJ-nVcFLm-iKy6Q=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '45204'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588517079208'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588517079208'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588517080.05
+    'REQUEST_TIME' => 1588517080
+]
+2020-05-03 16:44:57 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: humhub\modules\calendar\interfaces\CalendarServiceCustom in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('humhub\\modules\\...', true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(747): yii\base\Module->get('humhub\\modules\\...', true)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/ViewController.php(38): yii\base\Module->get('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\ViewController->init()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#5 [internal function]: yii\base\Controller->__construct('view', Object(humhub\modules\calendar\Module), Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('view')
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('load-ajax')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('view/load-ajax')
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/view/l...', Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#16 {main}
+2020-05-03 16:44:57 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/view/load-ajax'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'start' => '2020-04-26'
+    'end' => '2020-06-07'
+    'timezone' => 'Europe/Berlin'
+    '_' => '1588517096293'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7Y6Xl0V8lSapz@S4SVfwAAAAo'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'nGeizKb_JBhphHtBQahP1n9seRQib2U-lju-1B5DiRvdDJef04sccC7GCzU2wyihMy9IQG0OFVHCCt-AKzfdbA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '45218'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588517096293'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588517096293'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588517097.127
+    'REQUEST_TIME' => 1588517097
+]
+2020-05-03 16:47:06 [::1][13][83081adaa057996d22fb1c239bb48a59][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: humhub\modules\calendar\interfaces\CalendarServiceCustom in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('humhub\\modules\\...', true)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(747): yii\base\Module->get('humhub\\modules\\...', true)
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/modules/calendar/controllers/ViewController.php(38): yii\base\Module->get('humhub\\modules\\...')
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): humhub\modules\calendar\controllers\ViewController->init()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\BaseObject->__construct(Array)
+#5 [internal function]: yii\base\Controller->__construct('view', Object(humhub\modules\calendar\Module), Array)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('humhub\\modules\\...', Array)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('view')
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(588): yii\base\Module->createController('load-ajax')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('view/load-ajax')
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('calendar/view/l...', Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->run()
+#16 {main}
+2020-05-03 16:47:06 [::1][13][83081adaa057996d22fb1c239bb48a59][info][application] $_GET = [
+    'r' => 'calendar/view/load-ajax'
+    'cguid' => '4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'start' => '2020-04-26'
+    'end' => '2020-06-07'
+    'timezone' => 'Europe/Berlin'
+    '_' => '1588517225616'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Xq7ZanECrAgzw@VDGeC2FQAAAAI'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => '1lzw1O3lQUnDaLBbSoWM7fgD36FltJYEe8GzWi1wnxKXN8WHmJF5IYQqwC897uuatEDu9SrV5msv8NIOGATLZQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/index.php?r=calendar%2Fcommunity%2Findex&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_panel-activities=expanded; pm_calendar-upcoming-events-snippet=expanded; pm_space-gallery-snippet=expanded; pm_space-members-panel=expanded; pm_user-spaces-panel=expanded; pm_profile-follower-panel=expanded; pm_profile-following-panel=expanded; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D; PHPSESSID=83081adaa057996d22fb1c239bb48a59; _csrf=46bb2c2b627be5c79bded8c5aebe5ac5aa2fc383b6e5eb11ca07e91082c3f36ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Ak5Sut8hGBptwkgwLC1TOapoT1aT5tTw%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '45250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588517225616'
+    'REQUEST_URI' => '/humhub_versions/eportfolio/index.php?r=calendar%2Fview%2Fload-ajax&cguid=4719f10a-ef9a-4eeb-ae4b-191cc76ac540&start=2020-04-26&end=2020-06-07&timezone=Europe%2FBerlin&_=1588517225616'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588517226.445
+    'REQUEST_TIME' => 1588517226
+]
+2020-05-07 13:59:16 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Connection refused in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(379): yii\db\Schema->getTableSchema('user')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(210): yii\db\ActiveRecord::getTableSchema()
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/user/models/User.php(247): yii\db\BaseActiveRecord::findOne(Array)
+#16 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(595): humhub\modules\user\models\User::findIdentity(13)
+#17 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#18 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(707): yii\web\User->loginByCookie()
+#19 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#20 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#21 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#22 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#23 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#24 [internal function]: yii\base\BaseObject->__construct(Array)
+#25 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#26 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#27 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#28 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#29 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#30 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#31 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#32 [internal function]: yii\base\Module->__construct('debug', Object(humhub\components\Application), Array)
+#33 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#34 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#35 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#36 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#37 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(45): yii\base\Module->getModule('debug')
+#38 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(187): humhub\modules\ui\view\helpers\ThemeHelper::getThemes()
+#39 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(160): humhub\modules\ui\view\helpers\ThemeHelper::getThemeParent(Object(humhub\modules\ui\view\components\Theme))
+#40 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(229): humhub\modules\ui\view\helpers\ThemeHelper::getThemeTree(Object(humhub\modules\ui\view\components\Theme), false)
+#41 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(108): humhub\modules\ui\view\components\Theme->getParents()
+#42 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/bootstrap/ThemeLoader.php(50): humhub\modules\ui\view\components\Theme->register()
+#43 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(327): humhub\modules\ui\view\bootstrap\ThemeLoader->bootstrap(Object(humhub\components\Application))
+#44 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#45 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Application.php(46): yii\web\Application->bootstrap()
+#46 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(273): humhub\components\Application->bootstrap()
+#47 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#48 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#49 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->__construct(Array)
+#50 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Connection refused in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(379): yii\db\Schema->getTableSchema('user')
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(210): yii\db\ActiveRecord::getTableSchema()
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/user/models/User.php(247): yii\db\BaseActiveRecord::findOne(Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(595): humhub\modules\user\models\User::findIdentity(13)
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#16 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(707): yii\web\User->loginByCookie()
+#17 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#21 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#24 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#27 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#28 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(humhub\components\Application), Array)
+#31 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#32 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(45): yii\base\Module->getModule('debug')
+#36 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(187): humhub\modules\ui\view\helpers\ThemeHelper::getThemes()
+#37 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(160): humhub\modules\ui\view\helpers\ThemeHelper::getThemeParent(Object(humhub\modules\ui\view\components\Theme))
+#38 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(229): humhub\modules\ui\view\helpers\ThemeHelper::getThemeTree(Object(humhub\modules\ui\view\components\Theme), false)
+#39 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(108): humhub\modules\ui\view\components\Theme->getParents()
+#40 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/bootstrap/ThemeLoader.php(50): humhub\modules\ui\view\components\Theme->register()
+#41 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(327): humhub\modules\ui\view\bootstrap\ThemeLoader->bootstrap(Object(humhub\components\Application))
+#42 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#43 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Application.php(46): yii\web\Application->bootstrap()
+#44 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(273): humhub\components\Application->bootstrap()
+#45 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#46 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#47 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->__construct(Array)
+#48 {main}
+Additional Information:
+
+2020-05-07 13:59:12 [::1][-][-][info][application] $_GET = []
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XrP4Dt7zTFY288c9fO1pWgAAAAA'
+    'REDIRECT_BASE' => '/humhub_versions/eportfolio'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XrP4Dt7zTFY288c9fO1pWgAAAAA'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_ga=GA1.1.1524641350.1588609180; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33530'
+    'REDIRECT_URL' => '/humhub_versions/eportfolio/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/humhub_versions/eportfolio/'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588852750.274
+    'REQUEST_TIME' => 1588852750
+]
+2020-05-07 13:59:17 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Connection refused' 
+
+in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('yii\\db\\Exceptio...')
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('yii\\db\\Exceptio...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->getRawSql()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1064): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/DbTarget.php(93): yii\db\Command->execute()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/Target.php(133): yii\log\DbTarget->export()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\log\Target->collect(Array, true)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 [internal function]: yii\log\Logger->flush(true)
+#12 {main}
+2020-05-07 13:59:12 [::1][-][-][info][application] $_GET = []
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XrP4Dt7zTFY288c9fO1pWgAAAAA'
+    'REDIRECT_BASE' => '/humhub_versions/eportfolio'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XrP4Dt7zTFY288c9fO1pWgAAAAA'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_ga=GA1.1.1524641350.1588609180; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33530'
+    'REDIRECT_URL' => '/humhub_versions/eportfolio/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/humhub_versions/eportfolio/'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588852750.274
+    'REQUEST_TIME' => 1588852750
+]
+2020-05-07 13:59:17 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Connection refused in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(379): yii\db\Schema->getTableSchema('user')
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(210): yii\db\ActiveRecord::getTableSchema()
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/user/models/User.php(247): yii\db\BaseActiveRecord::findOne(Array)
+#16 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(595): humhub\modules\user\models\User::findIdentity(13)
+#17 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#18 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(707): yii\web\User->loginByCookie()
+#19 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#20 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#21 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#22 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#23 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#24 [internal function]: yii\base\BaseObject->__construct(Array)
+#25 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#26 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#27 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#28 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#29 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#30 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#31 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#32 [internal function]: yii\base\Module->__construct('debug', Object(humhub\components\Application), Array)
+#33 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#34 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#35 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#36 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#37 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(45): yii\base\Module->getModule('debug')
+#38 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(187): humhub\modules\ui\view\helpers\ThemeHelper::getThemes()
+#39 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(160): humhub\modules\ui\view\helpers\ThemeHelper::getThemeParent(Object(humhub\modules\ui\view\components\Theme))
+#40 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(229): humhub\modules\ui\view\helpers\ThemeHelper::getThemeTree(Object(humhub\modules\ui\view\components\Theme), false)
+#41 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(108): humhub\modules\ui\view\components\Theme->getParents()
+#42 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/bootstrap/ThemeLoader.php(50): humhub\modules\ui\view\components\Theme->register()
+#43 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(327): humhub\modules\ui\view\bootstrap\ThemeLoader->bootstrap(Object(humhub\components\Application))
+#44 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#45 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Application.php(46): yii\web\Application->bootstrap()
+#46 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(273): humhub\components\Application->bootstrap()
+#47 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#48 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#49 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->__construct(Array)
+#50 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Connection refused in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('user', 'schema', false)
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(379): yii\db\Schema->getTableSchema('user')
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(210): yii\db\ActiveRecord::getTableSchema()
+#11 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/user/models/User.php(247): yii\db\BaseActiveRecord::findOne(Array)
+#14 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(595): humhub\modules\user\models\User::findIdentity(13)
+#15 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#16 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(707): yii\web\User->loginByCookie()
+#17 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/panels/UserPanel.php(79): yii\base\Component->__get('isGuest')
+#21 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#24 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(182): yii\BaseYii::createObject(Array)
+#27 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2-debug/src/Module.php(154): yii\debug\Module->initPanels()
+#28 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(humhub\components\Application), Array)
+#31 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#32 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(45): yii\base\Module->getModule('debug')
+#36 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(187): humhub\modules\ui\view\helpers\ThemeHelper::getThemes()
+#37 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/helpers/ThemeHelper.php(160): humhub\modules\ui\view\helpers\ThemeHelper::getThemeParent(Object(humhub\modules\ui\view\components\Theme))
+#38 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(229): humhub\modules\ui\view\helpers\ThemeHelper::getThemeTree(Object(humhub\modules\ui\view\components\Theme), false)
+#39 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/components/Theme.php(108): humhub\modules\ui\view\components\Theme->getParents()
+#40 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/modules/ui/view/bootstrap/ThemeLoader.php(50): humhub\modules\ui\view\components\Theme->register()
+#41 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(327): humhub\modules\ui\view\bootstrap\ThemeLoader->bootstrap(Object(humhub\components\Application))
+#42 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#43 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/humhub/components/Application.php(46): yii\web\Application->bootstrap()
+#44 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(273): humhub\components\Application->bootstrap()
+#45 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#46 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#47 /opt/lampp/htdocs/humhub_versions/eportfolio/index.php(25): yii\base\Application->__construct(Array)
+#48 {main}
+Additional Information:
+
+2020-05-07 13:59:17 [::1][-][-][info][application] $_GET = []
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XrP4FaOr4O-WuolINZUrGwAAAAE'
+    'REDIRECT_BASE' => '/humhub_versions/eportfolio'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XrP4FaOr4O-WuolINZUrGwAAAAE'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_ga=GA1.1.1524641350.1588609180; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33532'
+    'REDIRECT_URL' => '/humhub_versions/eportfolio/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/humhub_versions/eportfolio/'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588852757.838
+    'REQUEST_TIME' => 1588852757
+]
+2020-05-07 13:59:17 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\log\DbTarget: Exception (Database Exception) 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Connection refused' 
+
+in /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php:624
+
+Stack trace:
+#0 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Schema.php(463): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Connection.php(881): yii\db\Schema->quoteValue('yii\\db\\Exceptio...')
+#4 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(209): yii\db\Connection->quoteValue('yii\\db\\Exceptio...')
+#5 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1099): yii\db\Command->getRawSql()
+#6 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/db/Command.php(1064): yii\db\Command->logQuery('yii\\db\\Command:...')
+#7 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/DbTarget.php(93): yii\db\Command->execute()
+#8 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/Target.php(133): yii\log\DbTarget->export()
+#9 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/Dispatcher.php(189): yii\log\Target->collect(Array, true)
+#10 /opt/lampp/htdocs/humhub_versions/eportfolio/protected/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 [internal function]: yii\log\Logger->flush(true)
+#12 {main}
+2020-05-07 13:59:17 [::1][-][-][info][application] $_GET = []
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'XrP4FaOr4O-WuolINZUrGwAAAAE'
+    'REDIRECT_BASE' => '/humhub_versions/eportfolio'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'XrP4FaOr4O-WuolINZUrGwAAAAE'
+    'BASE' => '/humhub_versions/eportfolio'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/81.0.4044.122 Chrome/81.0.4044.122 Safari/537.36'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost/humhub_versions/eportfolio/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_ga=GA1.1.1524641350.1588609180; _identity=68127f5d61524799fc0a9ace1016990e1782dba2ce13b5a956925922b8d99060a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B13%2C%221daa6b6d-143f-4663-b37f-1f304ea9f361%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.2.13 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/humhub_versions/eportfolio/index.php'
+    'REMOTE_PORT' => '33532'
+    'REDIRECT_URL' => '/humhub_versions/eportfolio/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'HEAD'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/humhub_versions/eportfolio/'
+    'SCRIPT_NAME' => '/humhub_versions/eportfolio/index.php'
+    'PHP_SELF' => '/humhub_versions/eportfolio/index.php'
+    'REQUEST_TIME_FLOAT' => 1588852757.838
+    'REQUEST_TIME' => 1588852757
+]
