@@ -14,7 +14,7 @@ use yii\captcha\Captcha;
         <div class="modal-body">
             <?php $form = CActiveForm::begin(['enableClientValidation' => false]); ?>
 
-            <p><?= Yii::t('UserModule.views_auth_recoverPassword', 'Just enter your e-mail address. We\'ll send you recovery instructions!'); ?></p>
+            <p><?= Yii::t('UserModule.views_auth_recoverPassword', '<div style="color: #026d05;"><b>Important:</b> If you registered with the ZIMT account (same mail and password), please reset your password on the ZIMT website at this link: <a href="https://www.zimt.uni-siegen.de/dienste/konto/" target="_blank" style="color: #0b58a2">https://www.zimt.uni-siegen.de/dienste/konto</a>. Once you change the password, you will be able to login again!</div><div>For other accounts: Please enter your e-mail address. We\'ll send you recovery instructions!<br></div>'); ?></p>
 
             <div class="form-group">
                 <?= $form->textField($model, 'email', ['class' => 'form-control', 'id' => 'email_txt', 'placeholder' => Yii::t('UserModule.views_auth_recoverPassword', 'Your email')]); ?>

@@ -1,14 +1,14 @@
-a:2:{i:0;s:1558:"
-<a href="/humhub_versions/eportfolio/index.php?r=activity%2Flink&id=486">
+a:2:{i:0;s:1579:"
+<a href="/humhub_versions/eportfolio_master/index.php?r=activity%2Flink&id=486">
     <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="775">
         <div class="media">
                             <!-- Show user image -->
                 <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
                      style="width: 32px; height: 32px;"
-                     src="/humhub_versions/eportfolio/static/img/default_user.jpg">
+                     src="/humhub_versions/eportfolio_master/static/img/default_user.jpg">
             
             <!-- Show space image, if you are outside from a space -->
-                                                <div class="img-space pull-left space-profile-acronym-3 space-acronym hidden" style=" background-color: #0a1577; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">PI</div><img class="img-space pull-left space-profile-image-3 img-rounded profile-user-photo" src="/humhub_versions/eportfolio/uploads/profile_image/183e709a-3474-4cb6-a6fd-5e2b9d729357.jpg?m=1562745665" alt="Platform Issues and Suggestions" style=" width: 20px; height: 20px">                
+                                                <div class="img-space pull-left space-profile-acronym-3 space-acronym hidden" style=" background-color: #0a1577; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">PI</div><img class="img-space pull-left space-profile-image-3 img-rounded profile-user-photo" src="/humhub_versions/eportfolio_master/uploads/profile_image/183e709a-3474-4cb6-a6fd-5e2b9d729357.jpg?m=1562745665" alt="Platform Issues and Suggestions" style=" width: 20px; height: 20px">                
             
             <div class="media-body text-break">
 

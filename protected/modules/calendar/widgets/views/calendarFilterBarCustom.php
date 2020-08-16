@@ -42,7 +42,7 @@ use kartik\select2\Select2;
                             <label class="calendar_my_profile">
                                 <input id="only_community" type="checkbox" name="selector" class="selectorCheckbox"
                                        value="12345678901"
-                                       <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_SPACES, $selectors)): ?>checked="checked"<?php endif; ?>>
+                                       <?php if (in_array(ActiveQueryContentCustom::USER_RELATED_SCOPE_SPACES, $selectors)): ?><?php endif; ?>>
                                 <?= Yii::t('CalendarModule.views_global_index', 'Only Community'); ?>
                             </label>
                         </div>

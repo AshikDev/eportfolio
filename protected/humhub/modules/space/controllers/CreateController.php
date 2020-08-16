@@ -10,6 +10,7 @@ namespace humhub\modules\space\controllers;
 
 use humhub\components\Controller;
 use humhub\components\behaviors\AccessControl;
+use humhub\modules\space\models\Membership;
 use humhub\modules\space\models\Space;
 use humhub\modules\space\permissions\CreatePrivateSpace;
 use humhub\modules\space\permissions\CreatePublicSpace;
@@ -57,7 +58,8 @@ class CreateController extends Controller
      */
     public function actionCreate($visibility = null, $skip = 0)
     {
-        $communityList = \yii\helpers\ArrayHelper::map(Space::find()->where(['community' => '_0_'])->all(), 'id', 'name');
+        $space_membership = Membership::findByUser(Yii::$app->user->getIdentity())->select('space_id')->column();
+        $communityList = \yii\helpers\ArrayHelper::map(Space::find()->where(['community' => '_0_'])->andWhere(['in','id', $space_membership])->all(), 'id', 'name');
         
         // User cannot create spaces (public or private)
         if (!Yii::$app->user->permissionmanager->can(new CreatePublicSpace) && !Yii::$app->user->permissionmanager->can(new CreatePrivateSpace)) {

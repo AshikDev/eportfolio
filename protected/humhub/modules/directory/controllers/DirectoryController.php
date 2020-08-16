@@ -157,7 +157,25 @@ class DirectoryController extends Controller
         if($keyword != '') {
             $spaces = $searchResultSet->getResultInstances();
         } else {
+
+            $communities = Space::find()
+                ->leftJoin('space_membership', 'space.id=space_membership.space_id')
+                ->where(['space_membership.user_id' => Yii::$app->user->id])
+                ->andWhere(['space.community' => '_0_'])
+                ->orWhere(['<>', 'space.visibility', '0'])
+                ->limit(3)
+                ->column();
+
+            $onlySpaces = Space::find()
+                ->leftJoin('space_membership', 'space.id=space_membership.space_id')
+                ->where(['space_membership.user_id' => Yii::$app->user->id])
+                ->andWhere(['space.community' => '_0_'])
+                ->orWhere(['<>', 'space.visibility', '0'])
+                ->limit(3)
+                ->column();
+
             $spaces = Space::find()
+                //->select(["SUM(case when space.community = 1 then 1 else 0 end) as countKindOne", "space.*"])
                 ->leftJoin('space_membership', 'space.id=space_membership.space_id')
                 ->where(['space_membership.user_id' => Yii::$app->user->id])
                 ->orWhere(['<>', 'space.visibility', '0'])
@@ -167,9 +185,39 @@ class DirectoryController extends Controller
         return $this->render('spaces', [
                     'keyword' => $keyword,
                     'spaces' => $spaces,
+                    //'communities' => $communities,
                     'pagination' => $pagination,
         ]);
     }
+
+//    public function actionSpaces()
+//    {
+//        $keyword = Yii::$app->request->get('keyword', '');
+//        $page = (int) Yii::$app->request->get('page', 1);
+//
+//        $searchResultSet = Yii::$app->search->find($keyword, [
+//            'model' => Space::class,
+//            'page' => $page,
+//            'sortField' => ($keyword == '') ? 'title' : null,
+//            'pageSize' => $this->module->pageSize,
+//        ]);
+//
+//        $pagination = new Pagination([
+//            'totalCount' => $searchResultSet->total,
+//            'pageSize' => $searchResultSet->pageSize
+//        ]);
+//
+//        Event::on(Sidebar::class, Sidebar::EVENT_INIT, function ($event) {
+//            $event->sender->addWidget(NewSpaces::class, [], ['sortOrder' => 10]);
+//            $event->sender->addWidget(SpaceStatistics::class, [], ['sortOrder' => 20]);
+//        });
+//
+//        return $this->render('spaces', [
+//            'keyword' => $keyword,
+//            'spaces' => $searchResultSet->getResultInstances(),
+//            'pagination' => $pagination,
+//        ]);
+//    }
 
     /**
      * Group Section of the directory
