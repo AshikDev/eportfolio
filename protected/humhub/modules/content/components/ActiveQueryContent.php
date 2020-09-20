@@ -102,7 +102,7 @@ class ActiveQueryContent extends \yii\db\ActiveQuery
             $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
             $this->andWhere(['IS', 'contentcontainer.pk', new \yii\db\Expression('NULL')]);
         } else {
-            if(isset($container->community) && (isset(Yii::$app->controller->module->id) && Yii::$app->controller->module->id == 'calendar')) {
+            if(isset($container->community) && (isset(Yii::$app->controller->module->id) && Yii::$app->controller->module->id == 'hubcalendar')) {
                 if($container->community == '_0_') {
                     $this->joinWith(['content', 'content.contentContainer', 'content.createdBy']);
                     $spaceChilds = Space::find()

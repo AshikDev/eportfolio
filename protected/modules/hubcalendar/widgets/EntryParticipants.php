@@ -1,0 +1,66 @@
+<?php
+
+namespace humhub\modules\hubcalendar\widgets;
+
+use humhub\components\Widget;
+use humhub\modules\hubcalendar\helpers\Url;
+use humhub\widgets\Button;
+use humhub\modules\hubcalendar\models\CalendarEntry;
+use humhub\modules\hubcalendar\models\CalendarEntryParticipant;
+use Yii;
+
+/**
+ * Description of EntryParticipants
+ *
+ * @author luke
+ */
+class EntryParticipants extends Widget
+{
+
+    /**
+     * @var CalendarEntry
+     */
+    public $calendarEntry;
+
+    public function run()
+    {
+        if($this->calendarEntry->closed) {
+            return;
+        }
+
+        $countAttending = $this->getParticipantStateCount(CalendarEntryParticipant::PARTICIPATION_STATE_ACCEPTED, true);
+        $countMaybe = $this->getParticipantStateCount(CalendarEntryParticipant::PARTICIPATION_STATE_MAYBE, $this->calendarEntry->allow_maybe);
+        $countDeclined = $this->getParticipantStateCount(CalendarEntryParticipant::PARTICIPATION_STATE_DECLINED, $this->calendarEntry->allow_decline);
+
+        return $this->render('participants', [
+            'calendarEntry' => $this->calendarEntry,
+            'countAttending' => $countAttending,
+            'countMaybe' => $countMaybe,
+            'countDeclined' => $countDeclined,
+        ]);
+    }
+
+    private function getParticipantStateCount($state, $condition)
+    {
+        if(!$condition) {
+            return null;
+        }
+
+        return  $this->calendarEntry->getParticipantCount($state);
+    }
+
+    public static function participateButton(CalendarEntry $calendarEntry, $state, $label)
+    {
+        if($state == CalendarEntryParticipant::PARTICIPATION_STATE_MAYBE && !$calendarEntry->allow_maybe) {
+            return null;
+        }
+        if($state == CalendarEntryParticipant::PARTICIPATION_STATE_DECLINED && !$calendarEntry->allow_decline) {
+            return null;
+        }
+
+        $participantSate = $calendarEntry->getParticipationStatus(Yii::$app->user->identity);
+        return Button::defaultType($label)->sm()
+                     ->icon($participantSate === $state ? 'fa-check' : null)
+                     ->action('calendar.respond', Url::toEntryRespond($calendarEntry, $state));
+    }
+}

@@ -1,0 +1,107 @@
+<?php
+
+namespace humhub\modules\hubcalendar\widgets;
+
+use humhub\modules\hubcalendar\assets\CalendarBaseAssets;
+use humhub\modules\hubcalendar\models\CalendarEntry;
+use humhub\modules\hubcalendar\permissions\ManageEntry;
+use humhub\modules\file\widgets\ShowFiles;
+use Solarium\QueryType\Update\Query\Command\Delete;
+use Yii;
+use humhub\modules\hubcalendar\models\CalendarEntryParticipant;
+
+class WallEntry extends \humhub\modules\content\widgets\WallEntry
+{
+    /**
+     * @var string
+     */
+    public $managePermission = ManageEntry::class;
+
+    /**
+     * @inheritdoc
+     */
+    public $editRoute = "/hubcalendar/entry/edit";
+    
+    /**
+     * @inheritdoc
+     */
+    public $editMode = self::EDIT_MODE_MODAL;
+
+    /**
+     * @var bool defines if the description and participation info should be cut at a certain height, this should only be the case in the stream
+     */
+    public $stream = true;
+
+    /**
+     * @var bool defines if the content should be collapsed
+     */
+    public $collapse = true;
+
+    /**
+     * @inheritdoc
+     */
+    public $addonOptions = [
+        ShowFiles::class => [
+            'preview' => false
+        ]
+    ];
+
+    public function getContextMenu()
+    {
+        $canEdit = $this->contentObject->content->canEdit();
+        if($canEdit) {
+            $this->controlsOptions = [
+                'add' => [
+                    [CloseLink::class, ['entry' => $this->contentObject], ['sortOrder' => 210]]
+                ]
+            ];
+        }
+
+        if($this->stream) {
+            return parent::getContextMenu();
+        }
+
+        $this->controlsOptions['prevent'] = [\humhub\modules\content\widgets\EditLink::class , \humhub\modules\content\widgets\DeleteLink::class];
+        $result = parent::getContextMenu();
+
+        if($canEdit) {
+            $this->addControl($result, [DeleteLink::class, ['entry' => $this->contentObject], ['sortOrder' => 100]]);
+            $this->addControl($result, [EditLink::class, ['entry' => $this->contentObject], ['sortOrder' => 200]]);
+        }
+
+        return $result;
+    }
+
+    public function getWallEntryViewParams()
+    {
+        $params = parent::getWallEntryViewParams();
+        if($this->isInModal()) {
+            $params['showContentContainer'] = true;
+        }
+        return $params;
+    }
+
+    public function isInModal()
+    {
+        return Yii::$app->request->get('cal');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function run()
+    {
+        CalendarBaseAssets::register($this->getView());
+        /* @var $entry CalendarEntry */
+        $entry = $this->contentObject;
+
+        return $this->render('wallEntry', [
+            'calendarEntry' => $entry,
+            'collapse' => $this->collapse,
+            'participantSate' => $entry->getParticipationStatus(Yii::$app->user->identity),
+            'contentContainer' => $entry->content->container
+        ]);
+    }
+}
+
+?>

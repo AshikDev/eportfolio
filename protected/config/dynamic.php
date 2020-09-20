@@ -4,7 +4,7 @@
     'db' => 
     array (
       'class' => 'yii\\db\\Connection',
-      'dsn' => 'mysql:host=localhost;dbname=eportfolio_master',
+      'dsn' => 'mysql:host=localhost;dbname=eportfolio_updated',
       'username' => 'root',
       'password' => 'root',
     ),
